@@ -42,9 +42,31 @@ header#page-header.fixed-top {
     position: inherit;
     width: 100% !important;
     transform: none !important;
+    background: url(https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/header_all.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    padding: 20px 0px 20px 15px;
 }
 
 .brand-wrapper .navbar-brand img {
     max-height: inherit;
     max-width: 250px;
+}
+
+@media(min-width: 992px){
+	#mainNavbarCollapsable ul.mainmenu>li a:after {
+	    display: none !important;
+	}
+
+	#mainNavbarCollapsable ul.mainmenu>li>a {
+	    padding: 17px 9px;
+	}
+
+	#mainNavbarCollapsable ul.mainmenu {
+	    background: #fccb40 !important;
+	    color: #333 !important;
+	    width: 100% !important;
+	    border-bottom: 5px solid #4567F1;
+	}
 }
