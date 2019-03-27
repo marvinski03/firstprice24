@@ -31,3 +31,15 @@ header#page-header.fixed-top {
 .wrapper-main .navbar{
 	border: none !important;
 }
+
+.brand-wrapper {
+    display: block !important;
+    position: inherit;
+    width: 100% !important;
+    transform: none !important;
+}
+
+.brand-wrapper .navbar-brand img {
+    max-height: inherit;
+    max-width: 250px;
+}
