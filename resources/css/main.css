@@ -19,11 +19,15 @@ body>#vue-error,
 
 body>#vue-app,
 body>#vue-error{
-	margin-top: 0px;
+	margin-top: 0px !important;
 }
 
 header#page-header.fixed-top {
     position: inherit;
     width: auto;
     display: block;
+}
+
+.wrapper-main .navbar{
+	border: none !important;
 }
