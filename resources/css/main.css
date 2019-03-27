@@ -17,9 +17,14 @@ body>#vue-error,
 	background: none;
 }
 
-body>#vue-app,
-body>#vue-error{
+>#vue-app,
+>#vue-error{
 	margin-top: 0px !important;
+}
+
+.container-max.fp24-container {
+    background: white;
+    box-shadow: 0px 0px 10px #0000001f;
 }
 
 header#page-header.fixed-top {
