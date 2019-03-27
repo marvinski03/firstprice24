@@ -90,7 +90,6 @@ header .container-max {
 
 
 
-
 /** DESKTOP NAVIGATION **/
 
 @media(min-width: 992px){
@@ -116,6 +115,36 @@ header .container-max {
 
 	#mainNavbarCollapsable ul.mainmenu>li:hover a {
 	    background: #ffffff2b;
+	}
+
+	#searchBox .cmp-search-box {
+	    background-color: #fcca40f0;
+	    width: 100%;
+	    height: 100%;
+	    top: 0px !important;
+	}
+
+	#searchBox .search-box-inner {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	#searchBox .search-box-shadow-frame {
+	    position: absolute;
+	    top: 50%;
+	    width: 100%;
+	    max-width: 730px;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	}
+
+	a.anicon.anicon-search-xcross {
+	    position: relative;
+	    z-index: 99999;
+	}
+
+	.top-bar .controls-list .control-languages a[aria-expanded="true"], .top-bar .controls-list .control-search a[aria-expanded="true"]{
+		background: transparent;
 	}
 }
 
