@@ -117,7 +117,7 @@ header .container-max {
 	    background: #ffffff2b;
 	}
 
-	#searchBox .cmp-search-box {
+	#searchBox{
 	    background-color: #fcca40f0;
 	    width: 100%;
 	    height: 100%;
