@@ -54,6 +54,28 @@ header#page-header.fixed-top {
     max-width: 250px;
 }
 
+.row.mx-0.top-bar-row {
+    background-image: -moz-linear-gradient(0% 58% 0deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
+    background-image: -webkit-gradient(linear,0% 58%,79% 58%,color-stop(0, rgb(247,247,247)),color-stop(1, rgb(255,255,255)));
+    background-image: -webkit-linear-gradient(0deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
+    background-image: -o-linear-gradient(0deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient(0deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
+    background-image: linear-gradient(90deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
+}
+
+.row.mx-0.top-bar-row * {
+    color: #333;
+}
+
+.top-bar-row .anicon>.anicon-search-item:before{
+	background: #333;
+}
+
+.top-bar-row .anicon>.anicon-search-item:after{
+	background: transparent;
+	border-color: #333;
+}
+
 @media(min-width: 992px){
 	#mainNavbarCollapsable ul.mainmenu>li a:after {
 	    display: none !important;
