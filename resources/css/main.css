@@ -1,3 +1,6 @@
+/** GENERAL & CONTAINER **/
+
+
 body{
     background-color: #99B0C2;
     background-attachment: fixed;
@@ -26,6 +29,11 @@ body>#vue-error,
     background: white;
     box-shadow: 0px 0px 10px #0000001f;
 }
+
+
+
+
+/** HEADER **/
 
 header#page-header.fixed-top {
     position: inherit;
@@ -72,9 +80,18 @@ header#page-header.fixed-top {
 }
 
 .top-bar-row .anicon>.anicon-search-item:after{
-	background: transparent;
+	background: #fefefe;
 	border-color: #333;
 }
+
+header .container-max {
+    padding: 0px;
+}
+
+
+
+
+/** DESKTOP NAVIGATION **/
 
 @media(min-width: 992px){
 	#mainNavbarCollapsable ul.mainmenu>li a:after {
@@ -97,3 +114,13 @@ header#page-header.fixed-top {
 	    opacity: 1;
 	}
 }
+
+
+
+/** CONTENT **/
+
+div#page-body {
+    padding-top: 15px;
+}
+
+
