@@ -69,4 +69,9 @@ header#page-header.fixed-top {
 	    width: 100% !important;
 	    border-bottom: 5px solid #4567F1;
 	}
+
+	#mainNavbarCollapsable ul.mainmenu li.ddown:hover ul {
+	    visibility: visible !important;
+	    opacity: 1;
+	}
 }
