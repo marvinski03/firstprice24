@@ -17,8 +17,8 @@ body>#vue-error,
 	background: none;
 }
 
->#vue-app,
->#vue-error{
+#vue-app,
+#vue-error{
 	margin-top: 0px !important;
 }
 
