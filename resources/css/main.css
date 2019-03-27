@@ -113,6 +113,10 @@ header .container-max {
 	    visibility: visible !important;
 	    opacity: 1;
 	}
+
+	#mainNavbarCollapsable ul.mainmenu>li:hover a {
+	    background: #ffffff2b;
+	}
 }
 
 
