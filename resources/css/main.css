@@ -69,7 +69,7 @@ header#page-header.fixed-top {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: left center !important;
-    padding: 20px 0px 20px 15px;
+    padding: 15px 30px;
 }
 
 .brand-wrapper .navbar-brand img {
@@ -155,7 +155,7 @@ img.h-siegel {
 	}
 
 	#mainNavbarCollapsable ul.mainmenu>li>a {
-	    padding: 17px 9px;
+	    padding: 4px 9px;
 	}
 
 	#mainNavbarCollapsable ul.mainmenu {
