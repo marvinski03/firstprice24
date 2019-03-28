@@ -271,6 +271,37 @@ div#page-body {
 }
 
 
+/** FRONT SLIDER **/
+
+.fp24-slide-text {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+span.fp24-slide-text-top {
+    background: #4568f1;
+    color: white;
+    font-size: 33px;
+    padding: 6px 15px;
+}
+
+span.fp24-slide-text-top {
+    background: #4568f1;
+    color: white;
+    font-size: 33px;
+    padding: 4px 15px 0px 15px;
+    width: auto;
+}
+
+span.fp24-slide-text-bottom {
+    background: #4568f1;
+    color: white;
+    font-size: 18px;
+    padding: 4px 15px 4px 15px;
+    width: auto;
+}
+
 
 
 /** FOOTER **/
