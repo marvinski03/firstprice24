@@ -266,6 +266,13 @@ div#page-body {
     padding: 3px;
 }
 
+img.footer-top {
+    max-width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+        margin-top: 80px;
+}
+
 p.fp24-footer-title {
     color: #fbbd00;
     text-transform: uppercase;
