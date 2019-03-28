@@ -8,13 +8,22 @@
     <div class="container-max">
         <div class="row mx-0">
             <div class="brand-wrapper" {% if showHeaderNavBar == "side" %}style="position: relative"{% endif %}>
-                <a class="navbar-brand float-lg-left" href="{{ homepageURL }}">
-                        <img alt="{{ companyName }}" src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/first-price-24.png" class="img-fluid" />
-                </a>
+                <div class="left">
+                    <a class="navbar-brand float-lg-left" href="{{ homepageURL }}">
+                            <img alt="{{ companyName }}" src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/first-price-24.png" class="img-fluid" />
+                    </a>
 
-                <button id="btnMainMenuToggler" v-open-mobile-navigation class="navbar-toggler d-lg-none" type="button">
-                    &#9776;
-                </button>
+                    <button id="btnMainMenuToggler" v-open-mobile-navigation class="navbar-toggler d-lg-none" type="button">
+                        &#9776;
+                    </button>
+                </div>
+                <div class="right">
+                    <img src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/trusted-shops-siegel.png" alt="Trusted Shops" title="Trusted Shops" class="h-siegel"/>
+
+                    <img src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/haendlerbund-siegel.png" alt="Hänlderbund Mitglied" title="Händlerbund Mitglied" class="h-siegel"/>
+                </div>
+
+                <div class="clear"></div>
             </div>
 
             <div id="mainNavbarCollapsable">
