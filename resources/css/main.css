@@ -37,7 +37,8 @@ body>#vue-app .wrapper-main, body>#vue-error .wrapper-main {
     box-shadow: 0px 0px 10px #0000001f;
 }
 
-.wrapper.header-wrap.wrapper-main {
+.wrapper.header-wrap.wrapper-main,
+.wrapper.footer-wrap.wrapper-main {
     overflow: visible !important;
     margin-left: -15px;
     margin-right: -15px;
@@ -227,11 +228,78 @@ body>#vue-error>.wrapper-bottom{
 }
 
 
-
 /** CONTENT **/
 
 div#page-body {
     padding-top: 30px;
 }
+
+
+
+
+/** FOOTER **/
+
+.footer {
+    padding: 15px;
+    background: #333;
+}
+
+.footer * {
+    color: white;
+}
+
+.footer p a{
+	color: #fbbd00;
+}
+
+.footer p a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+p.fp24-footer-title {
+    color: #fbbd00;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+ul.fp24-links {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.fp24-links{
+	margin-bottom: 5px;
+}
+
+ul.fp24-links li a {
+    color: white;
+}
+
+ul.fp24-links li a:hover {
+    color: #fbbd00;
+}
+
+ul.vorteile-liste {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.vorteile-liste li{
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 5px;
+}
+
+ul.vorteile-liste li:before {
+    content: "+";
+    position: absolute;
+    left: 0px;
+}
+
+
+
+
 
 
