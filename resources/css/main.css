@@ -42,6 +42,10 @@ body>#vue-error,
 	background: none;
 }
 
+.wrapper-main header .controls-list>li {
+    font-size: 13px;
+}
+
 #vue-app,
 #vue-error{
 	margin-top: 0px !important;
@@ -203,7 +207,8 @@ body>#vue-error>.wrapper-bottom{
 	}
 
 	#mainNavbarCollapsable ul.mainmenu>li>a {
-	    padding: 12px 9px 10px 9px;
+	    padding: 12px 8px 10px 8px;
+	    font-size: 16px;
 	}
 
 	#mainNavbarCollapsable ul.mainmenu {
