@@ -133,7 +133,7 @@ header .container-max {
 	    position: absolute;
 	    top: 50%;
 	    width: 100%;
-	    max-width: 730px;
+	    max-width: 560px;
 	    left: 50%;
 	    transform: translate(-50%,-50%);
 	}
@@ -143,8 +143,12 @@ header .container-max {
 	    z-index: 99999;
 	}
 
-	.top-bar .controls-list .control-languages a[aria-expanded="true"], .top-bar .controls-list .control-search a[aria-expanded="true"]{
+	.top-bar .controls-list .control-search a[aria-expanded="true"]{
 		background: transparent;
+	    position: fixed;
+	    right: 20px;
+	    top: 20px;
+	    transform: scale(2);
 	}
 }
 
