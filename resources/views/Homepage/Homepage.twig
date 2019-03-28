@@ -1,9 +1,89 @@
 {% extends getPartial('page-design') %}
 
+{% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
+
+{% set showDefaultHomepage = config("Ceres.default.homepage") %}
+{% set companyLogo  = config("Ceres.header.company_logo") %}
+{% set companyName  = trans("Ceres::Template.headerCompanyName") %}
+
+{% block PartialHead %}
+    <meta name="description" content="{{ trans('Ceres::Template.homepageMetaDescription') }}">
+    <meta name="robots" content="{% if forceNoIndex %}NOINDEX{% else %}{{ config("Ceres.meta.robots_home") }}{% endif %}">
+    <meta property="og:title" content="{{ companyName }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}"/>
+    <meta property="og:image"
+          content="{% if ('http' in companyLogo) or ('layout/' in companyLogo) %}{{ companyLogo }}{% else %}{{ plugin_path('Ceres') }}/{{ companyLogo }}{% endif %}"/>
+
+    <script type="application/ld+json">
+        {"@context": "http://schema.org","@type": "WebSite","url": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}/search?query={search_term}","query-input": "required name=search_ter	"}}
+    </script>
+
+    <title>{{ companyName }}</title>
+{% endblock %}
+
 {% block PageBody %}
 
-	<!-- Insert markup for homepage here -->
+<div id="front-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
 
-    <h1>My homepage</h1>
+
+				<div class="carousel slide fp24-front" data-interval="5000" data-ride="carousel" id="carousel-example">
+					<div class="carousel-inner" id="carousel-content">
+
+						<div class="carousel-item text-muted active">
+							<a href="#">
+								<img class="img-fluid" src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Startseite/akku-ueberwachungskamera.jpg" />
+							</a>
+
+							<div class="fp24-slide-text">
+								<a href="#">
+									<span class="fp24-slide-text-top">Akku Überwachungssystem</span>
+									<span class="fp24-slide-text-bottom">mit Zwei-Wege-Kommunikation und passender App</span>
+									<span class="fp24-slide-button">Mehr erfahren</span>
+								</a>
+							</div>
+
+						</div>
+
+						<div class="carousel-item text-muted">
+							<a href="#">
+								<img class="img-fluid" src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Startseite/ptz-ueberwachungssystem.jpg" />
+							</a>
+
+							<div class="fp24-slide-text top">
+								<a href="#">
+									<span class="fp24-slide-text-top">PTZ Überwachungssystem</span>
+									<span class="fp24-slide-text-bottom">Dreh- und schwenkbar,  Full HD, Mikrofon, App-Steuerung, uvm.</span>
+									<span class="fp24-slide-button">Mehr erfahren</span>
+								</a>
+							</div>
+
+						</div>
+
+
+
+					</div>
+
+					<a class="left carousel-control carousel-control-prev" href="#carousel-example" data-slide="prev"></a>
+
+					<a class="right carousel-control carousel-control-next" href="#carousel-example" data-slide="next"></a>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<p class="fp24-title">Herzlich Willkommen bei FirstPrice24</p>
+				<p class="fp24-intro">Wir versprechen Ihnen, dass Ihre Suche nach einer Videoüberwachung, einem Auto Rückfahrsystem oder einer allgemeinen Überwachungskamera sowie Auto Multimedia bei uns von Erfolg gekrönt ist. Bei uns gibt es in Sachen Sicherheit und im Speziellen beim Thema Überwachungssystem für Gewerbe und Zuhause ein beeindruckendes Angebot an ausgefeilter Technik, höchsten Standards und beste Qualität zu günstigen Preisen.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 {% endblock %}
