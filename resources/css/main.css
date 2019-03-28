@@ -257,6 +257,15 @@ div#page-body {
 	text-decoration: underline;
 }
 
+.footer-siegel img.h-siegel {
+    margin-left: 0px;
+    margin-right: 14px;
+    margin-top: 3px;
+    background: white;
+    border-radius: 100%;
+    padding: 3px;
+}
+
 p.fp24-footer-title {
     color: #fbbd00;
     text-transform: uppercase;
@@ -269,7 +278,7 @@ ul.fp24-links {
     padding: 0px;
 }
 
-ul.fp24-links{
+ul.fp24-links li{
 	margin-bottom: 5px;
 }
 
@@ -297,6 +306,7 @@ ul.vorteile-liste li:before {
     position: absolute;
     left: 0px;
 }
+
 
 
 
