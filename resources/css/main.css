@@ -149,8 +149,19 @@ img.h-siegel {
     z-index: 99999;
 }
 
-body>#vue-app .wrapper-bottom, body>#vue-error .wrapper-bottom {
+body>#vue-app>.wrapper-top,
+body>#vue-app>.wrapper-left,
+body>#vue-app>.wrapper-right,
+body>#vue-app>.wrapper-bottom,
+body>#vue-error>.wrapper-top,
+body>#vue-error>.wrapper-left,
+body>#vue-error>.wrapper-right,
+body>#vue-error>.wrapper-bottom{
     z-index: 999999;
+}
+
+.cmp-search-box .search-input {
+    padding: 10px;
 }
 
 /** DESKTOP NAVIGATION **/
