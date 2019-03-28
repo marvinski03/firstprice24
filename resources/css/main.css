@@ -145,6 +145,13 @@ img.h-siegel {
     background: linear-gradient(180deg,rgb(234, 234, 234) 0%,rgb(255,255,255) 100%);
 }
 
+.modal-backdrop {
+    z-index: 99999;
+}
+
+.modal-dialog {
+    z-index: 999999;
+}
 
 
 /** DESKTOP NAVIGATION **/
