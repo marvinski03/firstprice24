@@ -161,7 +161,7 @@ body>#vue-app .wrapper-bottom, body>#vue-error .wrapper-bottom {
 	}
 
 	#mainNavbarCollapsable ul.mainmenu>li>a {
-	    padding: 4px 9px;
+	    padding: 12px 9px 10px 9px;
 	}
 
 	#mainNavbarCollapsable ul.mainmenu {
