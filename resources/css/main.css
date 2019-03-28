@@ -149,10 +149,9 @@ img.h-siegel {
     z-index: 99999;
 }
 
-.modal-dialog {
+body>#vue-app .wrapper-bottom, body>#vue-error .wrapper-bottom {
     z-index: 999999;
 }
-
 
 /** DESKTOP NAVIGATION **/
 
