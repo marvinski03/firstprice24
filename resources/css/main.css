@@ -127,6 +127,23 @@ img.h-siegel {
 	}
 }
 
+.cmp-country-settings,
+.cmp-currency-select {
+    background: white;
+    color: #333;
+    box-shadow: 0px 4px 5px #0000001a;
+}
+
+.cmp-country-settings ul li a, 
+.cmp-currency-select ul li a {
+    color: #333;
+}
+
+
+.top-bar .controls-list .control-languages a[aria-expanded="true"], .top-bar .controls-list .control-search a[aria-expanded="true"] {
+    background: linear-gradient(180deg,rgb(234, 234, 234) 0%,rgb(255,255,255) 100%);
+}
+
 
 
 /** DESKTOP NAVIGATION **/
