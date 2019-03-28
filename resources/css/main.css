@@ -43,6 +43,9 @@ body>#vue-app .wrapper-main, body>#vue-error .wrapper-main {
     margin-right: -15px;
 }
 
+.left{float: left;}
+.right{float: right;}
+.clear{clear:both;}
 
 
 /** HEADER **/
@@ -110,6 +113,18 @@ header .container-max {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+img.h-siegel {
+    width: 64px;
+    margin-right: 20px;
+    margin-top: 17px;
+}
+
+@media(max-width: 992px){
+	.siegels{
+		display: none;
+	}
 }
 
 
