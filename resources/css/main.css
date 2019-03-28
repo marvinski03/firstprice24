@@ -1,5 +1,8 @@
 /** GENERAL & CONTAINER **/
 
+.pluginset-preview-overlay{
+	display: none !important;
+}
 
 body{
     background-color: #99B0C2;
@@ -23,6 +26,10 @@ body>#vue-error,
 #vue-app,
 #vue-error{
 	margin-top: 0px !important;
+}
+
+body>#vue-app .wrapper-main, body>#vue-error .wrapper-main {
+    position: inherit;
 }
 
 .container-max.fp24-container {
@@ -89,7 +96,7 @@ header .container-max {
 }
 
 #vue-app{
-	background: white;
+	background: white !important;
     box-shadow: 0px 0px 10px #0000001f;
     max-width: 1200px;
     z-index: auto;
@@ -99,6 +106,7 @@ header .container-max {
     margin-right: auto;
     margin-left: auto;
 }
+
 
 
 /** DESKTOP NAVIGATION **/
