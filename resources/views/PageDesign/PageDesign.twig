@@ -63,8 +63,11 @@
         <!-- filters -->
     </div>
 
-    <div class="wrapper wrapper-main {% if ceresConfig.header.fixNavBarPos %}isSticky{% endif %}">
+    <div class="wrapper header-wrap wrapper-main {% if ceresConfig.header.fixNavBarPos %}isSticky{% endif %}">
         {% include getPartial('header') %}
+    </div>
+
+    <div class="wrapper wrapper-main {% if ceresConfig.header.fixNavBarPos %}isSticky{% endif %}">
 
         <div id="page-body" class="main">
             {% block PageBody %}
