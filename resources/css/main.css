@@ -1,3 +1,24 @@
+/* abel-regular - latin */
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/fonts/abel-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Abel Regular'), local('Abel-Regular'),
+       url('https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/fonts/abel-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/fonts/abel-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/fonts/abel-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/fonts/abel-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/fonts/abel-v9-latin-regular.svg#Abel') format('svg'); /* Legacy iOS */
+}
+
+*{
+  font-family: 'Abel', sans-serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 150%;
+}
+
 /** GENERAL & CONTAINER **/
 
 .pluginset-preview-overlay{
@@ -85,6 +106,7 @@ header#page-header.fixed-top {
     background-image: -o-linear-gradient(0deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient(0deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
     background-image: linear-gradient(90deg,rgb(247,247,247) 0%,rgb(255,255,255) 100%);
+    border-bottom: 1px solid #eaeaea;
 }
 
 .row.mx-0.top-bar-row * {
