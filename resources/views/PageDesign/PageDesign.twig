@@ -40,8 +40,6 @@
 
 <body>
 
-<div class="container-max fp24-container">
-<div class="row mx-0" id="fp24-row">
 
 {{ LayoutContainer.show("Ceres::PageDesign.AfterOpeningBodyTag") }}
 
@@ -229,9 +227,8 @@
         vueApp.$mount( rootElement.cloneNode(true) );
 
         if ( vueApp.$el.id === "vue-app")
-        {
-        	oldNode = document.getElementById("fp24-row");
-            oldNode.replaceChild( vueApp.$el, rootElement );
+        {;
+            document.body.replaceChild( vueApp.$el, rootElement );
         }
     {% else %}
         var vueApp = new Vue({
@@ -375,7 +372,6 @@
 </script>
 
 {{ get_shop_builder_scripts( "latest", ceresConfig.log.performanceLevel == 'live') }}
-</div>
-</div>
+
 </body>
 </html>
