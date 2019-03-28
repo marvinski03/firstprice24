@@ -191,6 +191,7 @@ body>#vue-error>.wrapper-bottom{
 	    color: #333 !important;
 	    width: 100% !important;
 	    border-bottom: 5px solid #4567F1;
+	    padding-left: 23px;
 	}
 
 	#mainNavbarCollapsable ul.mainmenu li.ddown:hover ul {
