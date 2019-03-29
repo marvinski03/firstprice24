@@ -270,7 +270,11 @@ div#page-body {
     padding-top: 30px;
 }
 
-.fp24-title {
+.fp24-title,
+#front-page h1,
+#front-page h2,
+#front-page h3,
+#front-page h4{
     font-size: 32px;
     text-align: center;
     margin-top: 60px;
@@ -397,7 +401,7 @@ img.footer-top {
         margin-top: 80px;
 }
 
-p.fp24-footer-title {
+p.fp24-footer-title{
     color: #fbbd00;
     text-transform: uppercase;
     padding-top: 20px;

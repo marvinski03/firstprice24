@@ -78,7 +78,7 @@
 
 		<div class="row">
 			<div class="col-12">
-				<p class="fp24-title">Herzlich Willkommen bei FirstPrice24</p>
+				<h1>Innovative Neuheiten aus den Bereichen Technik und Elektronik!</h1>
 				<p class="fp24-intro">Wir versprechen Ihnen, dass Ihre Suche nach einer Videoüberwachung, einem Auto Rückfahrsystem oder einer allgemeinen Überwachungskamera sowie Auto Multimedia bei uns von Erfolg gekrönt ist. Bei uns gibt es in Sachen Sicherheit und im Speziellen beim Thema Überwachungssystem für Gewerbe und Zuhause ein beeindruckendes Angebot an ausgefeilter Technik, höchsten Standards und beste Qualität zu günstigen Preisen.</p>
 			</div>
 		</div>
@@ -112,6 +112,17 @@
 				<p>Zusätzliche Sicherheit dank SSL-Verschlüsselung und TrustedShop-Käuferschutz</p>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<p class="fp24-title">Unsere Neuheiten</p>
+				{% for content in container("Ceres::Homepage") if content.plugin == "Plenty" %}
+                    {{ content.result|raw }}
+                {% endfor %}
+            </div>
+		</div>
+
+
 	</div>
 </div>
 
