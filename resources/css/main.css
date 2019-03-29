@@ -338,6 +338,10 @@ span.fp24-slide-button:hover {
     margin-top: 75px;
 }
 
+.row.vorteile > div {
+    margin-bottom: 30px;
+}
+
 .vorteile .vorteil-img{
     margin-bottom: 15px;
     text-align: center;
