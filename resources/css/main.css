@@ -334,6 +334,24 @@ span.fp24-slide-button:hover {
     background-color: #ffdf85;
 }
 
+.vorteile{
+    margin-top: 50px;
+}
+
+.vorteile .vorteil-img{
+    margin-bottom: 10px;
+}
+
+.vorteile .vorteil-img img{
+    max-height: 72px;
+}
+
+.vorteile p{
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+}
+
 
 
 /** FOOTER **/
