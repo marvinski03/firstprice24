@@ -287,6 +287,15 @@ p.fp24-intro {
     margin: 0 auto;
 }
 
+.further-front-infos h2 {
+    text-align: left !important;
+    margin-bottom: 10px;
+}
+
+
+.further-front-infos p {
+    font-size: 16px;
+}
 
 /** FRONT SLIDER **/
 
