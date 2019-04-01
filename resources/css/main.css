@@ -296,7 +296,9 @@ p.fp24-intro {
 
 
 .row.further-front-infos {
-    background: #1d7bff08;
+    background: #fafafb;
+    border-top: 5px solid #1d7bff;
+    border-bottom: 5px solid #1d7bff;
     position: relative;
     padding: 20px;
 }
@@ -313,7 +315,7 @@ p.fp24-intro {
     border-color: transparent transparent #007bff transparent;
     content: "";
     position: absolute;
-    top: 0px;
+    bottom: 0px;
     left: calc(50% - 12px);
 }
 
@@ -325,7 +327,7 @@ p.fp24-intro {
     border-color: #007bff transparent transparent transparent;
     content: "";
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: calc(50% - 12px);
 }
 
