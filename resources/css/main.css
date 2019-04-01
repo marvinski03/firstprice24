@@ -348,8 +348,9 @@ p.fp24-intro {
 .row.kategorie-beschreibung-lang {
     margin-top: 100px;
     border-top: 5px solid #007bff;
-    padding-top: 40px;
+    padding: 40px 20px 25px 20px;
     position: relative;
+    background: #fafafb;
 }
 
 .row.kategorie-beschreibung-lang:before {
@@ -365,7 +366,7 @@ p.fp24-intro {
 }
 
 .row.kategorie-beschreibung-lang:after {
-    content: "Weitere Infos zum Thema";
+    content: "Weitere Informationen zum Thema";
     display: block;
     position: absolute;
     top: -30px;
@@ -373,6 +374,10 @@ p.fp24-intro {
     font-size: 16px;
     color: #1d7bff;
     font-style: italic;
+}
+
+.cmp-paginator .page-link {
+    color: black;
 }
 
 /** FRONT SLIDER **/
