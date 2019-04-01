@@ -352,7 +352,7 @@ p.fp24-intro {
     position: relative;
 }
 
-.row.kategorie-beschreibung-:before {
+.row.kategorie-beschreibung-lang:before {
     width: 0;
     height: 0;
     border-style: solid;
