@@ -323,6 +323,14 @@ p.fp24-intro {
     left: calc(50% - 12px);
 }
 
+.top-marken-wrap {
+    text-align: center;
+}
+
+.top-marken-wrap img {
+    margin: 20px 20px 0px 20px;
+}
+
 /** FRONT SLIDER **/
 
 .fp24-slide-text {
