@@ -23,7 +23,7 @@
                         {{ category.details[0].name }}
                     {% endif %}
                 </h1>
-                {% if ceresConfig.item.showCategoryDescriptionTop in ["description2", "both"] and category.details[0].description2 | trim is not empty %}
+                {% if category.details[0].description %}
                     <div class="category-description mb-3">{{ category.details[0].description | raw }}</div>
                 {% endif %}
             </div>
