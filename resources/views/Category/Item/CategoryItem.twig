@@ -110,14 +110,9 @@
         {% endif %}
 
         {% if category is defined %}
-            <div class="col-12">
-                {% if ceresConfig.item.showCategoryDescriptionBottom in ["description1", "both"] and category.details[0].description | trim is not empty %}
-                    <div class="category-description mb-3">{{ category.details[0].description | raw }}</div>
-                {% endif %}
-                {% if ceresConfig.item.showCategoryDescriptionBottom in ["description2", "both"] and category.details[0].description2 | trim is not empty %}
-                    <div class="category-description mb-3">{{ category.details[0].description2 | raw }}</div>
-                {% endif %}
-            </div>
+            <div class="container further-cat-infos">
+	            {{ category.details[0].description2 | raw }}
+	        </div>
         {% endif %}
     </div>
 
