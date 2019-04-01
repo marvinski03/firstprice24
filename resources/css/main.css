@@ -339,6 +339,12 @@ p.fp24-intro {
     margin: 20px 20px 0px 20px;
 }
 
+/** KATEGORIE **/  
+
+.page-content {
+    background: white !important;
+} 
+
 /** FRONT SLIDER **/
 
 .fp24-slide-text {
@@ -508,6 +514,8 @@ ul.vorteile-liste li:before {
     padding: 10px;
     text-align: center;
 }
+
+
 
 
 
