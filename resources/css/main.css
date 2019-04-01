@@ -364,6 +364,17 @@ p.fp24-intro {
     left: calc(50% - 12px);
 }
 
+.row.kategorie-beschreibung-lang:after {
+    content: "Weitere Infos zum Thema";
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    font-size: 16px;
+    color: #1d7bff;
+    font-style: italic;
+}
+
 /** FRONT SLIDER **/
 
 .fp24-slide-text {
