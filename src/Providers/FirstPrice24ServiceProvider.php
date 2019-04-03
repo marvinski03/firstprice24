@@ -12,6 +12,7 @@ use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 use Plenty\Plugin\ConfigRepository;
+use FirstPrice24\Extensions\Firstprice24GetFreitext;
 
 
 /**
@@ -28,7 +29,9 @@ class FirstPrice24ServiceProvider extends ServiceProvider
     }
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
-    {
+    {   
+
+        $twig->addExtension(FirstPrice24GetFreitext::class);
 
         $enabledOverrides = explode(", ", $config->get("FirstPrice24.templates.override"));
 
