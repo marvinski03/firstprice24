@@ -4,9 +4,6 @@
         {% if 'item.description' in itemData or 'all' in itemData %}
             <li class="nav-item" v-if="isDescriptionTabActive">
                 <a class="nav-link active" data-toggle="tab" :href="'#details-' +  currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.singleItemDescription") }}</a>
-
-                {{ var.free7 }}
-
             </li>
         {% endif %}
 
@@ -28,6 +25,9 @@
             <div class="tab-pane active overflow-auto" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
                 <div class="my-4" v-html="currentVariation.texts.description">
                 </div>
+
+                Video:<br>
+                 {{ var.free7 }}
             </div>
         {% endif %}
 
