@@ -545,7 +545,7 @@ a.item-name.text-primary.text-appearance{
 }
 
 .checkout .paypal-installment-specific-promotion a {
-    color: #268cc0 !important;
+    color: #333 !important;
 }
 
 /** FOOTER **/
