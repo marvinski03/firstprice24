@@ -4,6 +4,8 @@
 {% set itemData = config("Ceres.item.data") | split(', ') %}
 {% set enabledRoutes = config("IO.routing.enabled_routes") | split(', ') %}
 
+{% set var = getFree(item.documents[0].data.item.id) %}
+
 <script type="x/template" id="vue-single-item">
     <div>
         <div class="single container-max page-content">
