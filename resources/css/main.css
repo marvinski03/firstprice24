@@ -188,6 +188,10 @@ body>#vue-error>.wrapper-bottom{
     z-index: 999999;
 }
 
+body>#vue-app>.wrapper-right {
+    z-index: 9999999999;
+}
+
 .cmp-search-box .search-input {
     padding: 10px;
 }
@@ -493,6 +497,11 @@ ul.nav.nav-tabs a {
 
 ul.breadcrumb * {
     color: grey;
+}
+
+.btn-outline-primary {
+    color: #333;
+    border-color: #333;
 }
 
 /** FOOTER **/
