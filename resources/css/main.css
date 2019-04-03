@@ -173,6 +173,9 @@ img.h-siegel {
 .modal-backdrop {
     z-index: 99999;
 }
+.modal {
+    z-index: 99999999;
+}
 
 body>#vue-app>.wrapper-top,
 body>#vue-app>.wrapper-left,
