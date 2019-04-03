@@ -518,16 +518,18 @@ a.item-name.text-primary.text-appearance{
 }
 
 .single .paypal-installment-specific-promotion {
-    height: 42px;
+    height: 50px;
     overflow: hidden;
     padding-left: 13px;
     margin-top: 15px;
     margin-bottom: 10px;
+        border: none;
 }
 
 .checkout .paypal-installment-specific-promotion {
     margin-top: 15px;
     margin-bottom: 10px;
+
 }
 
 .single .paypal-installment-specific-promotion b {
