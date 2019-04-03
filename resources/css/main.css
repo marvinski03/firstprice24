@@ -200,41 +200,6 @@ body>#vue-app>.wrapper-right {
     padding: 10px;
 }
 
-@media(max-width: 768px){
-	.brand-wrapper .navbar-brand img{
-		max-width: 160px;
-	}
-
-	.brand-wrapper{
-		padding: 0px 30px 5px 22px;
-	}
-
-    .fp24-slide-text {
-        top: 10px;
-        left: 10px;
-    }
-
-    span.fp24-slide-text-top {
-        font-size: 21px;
-        padding: 0px 15px 0px 8px;
-    }
-
-    span.fp24-slide-text-bottom {
-        font-size: 14px;
-        padding: 3px 15px 3px 8px;
-    }
-
-    span.fp24-slide-button {
-        background-size: 5px 10px;
-        background-repeat: no-repeat;
-        background-position: right 7px top 9px;
-        font-size: 12px;
-        padding: 5px 27px 4px 8px;
-        margin-top: 10px;
-    }
-
-}
-
 /** DESKTOP NAVIGATION **/
 
 @media(min-width: 992px){
@@ -674,4 +639,40 @@ ul.vorteile-liste li:before {
     margin-bottom: -15px;
     padding: 10px;
     text-align: center;
+}
+
+
+@media(max-width: 768px){
+    .brand-wrapper .navbar-brand img{
+        max-width: 160px;
+    }
+
+    .brand-wrapper{
+        padding: 0px 30px 5px 22px;
+    }
+
+    .fp24-slide-text {
+        top: 10px;
+        left: 10px;
+    }
+
+    span.fp24-slide-text-top {
+        font-size: 21px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    span.fp24-slide-text-bottom {
+        font-size: 14px;
+        padding: 3px 15px 3px 8px;
+    }
+
+    span.fp24-slide-button {
+        background-size: 5px 10px;
+        background-repeat: no-repeat;
+        background-position: right 7px top 9px;
+        font-size: 12px;
+        padding: 5px 27px 4px 8px;
+        margin-top: 10px;
+    }
+
 }
