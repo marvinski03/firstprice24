@@ -487,6 +487,14 @@ span.availability.badge *{
     color: white;
 }
 
+ul.nav.nav-tabs a {
+    color: black;
+}
+
+ul.breadcrumb * {
+    color: grey;
+}
+
 /** FOOTER **/
 
 .footer {

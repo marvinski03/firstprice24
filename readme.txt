@@ -1,3 +1,3 @@
+PayPal Plus Container-Verknüpfungen
+AmazonPay
 Filter?
-Checkout (Zahlungsarten)
-Video-Reiter
