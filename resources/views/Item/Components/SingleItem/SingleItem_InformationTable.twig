@@ -48,9 +48,7 @@
 	        <div class="tab-pane" id="my-custom-tab" role="tabpanel">
 	            <div class="m-y-2">
 	                <div class='embed-container yt-videos'>
-		                {% autoescape 'html' %}
-		                    {{ var.free7 }}
-		                {% endautoescape %}
+	                    {{ var.free7|raw }}
 	                </div>
 	            </div>
 	        </div>
