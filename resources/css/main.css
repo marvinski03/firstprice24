@@ -192,6 +192,10 @@ body>#vue-app>.wrapper-right {
     z-index: 9999999999;
 }
 
+.cc-revoke, .cc-window {
+    z-index: 99999999999;
+}
+
 .cmp-search-box .search-input {
     padding: 10px;
 }
