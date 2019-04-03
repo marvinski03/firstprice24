@@ -1,3 +1,2 @@
 AmazonPay
 Filter?
-Cookie
