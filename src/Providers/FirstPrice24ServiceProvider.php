@@ -12,7 +12,7 @@ use IO\Helper\TemplateContainer;
 use IO\Extensions\Functions\Partial;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 use Plenty\Plugin\ConfigRepository;
-use FirstPrice24\Extensions\Firstprice24GetFreitext;
+use FirstPrice24\Extensions\FirstPrice24GetFreitext;
 
 
 /**
