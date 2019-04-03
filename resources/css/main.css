@@ -676,3 +676,12 @@ ul.vorteile-liste li:before {
     }
 
 }
+
+@media(max-width: 400px){
+    .fp24-front img.img-fluid {
+        min-height: 160px;
+        width: auto !important;
+        max-width: 9999px !important;
+        max-height: 140px;
+    }
+}
