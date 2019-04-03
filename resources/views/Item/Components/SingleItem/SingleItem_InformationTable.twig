@@ -13,6 +13,14 @@
             </li>
         {% endif %}
 
+        {% if var.free7 %}
+
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#my-custom-tab" role="tab">Produktvideo</a>
+            </li>
+
+        {% endif %}
+
         <li class="nav-item">
             <a :class="{ 'active': !isDescriptionTabActive && !isTechnicalDataTabActive }" class="nav-link" data-toggle="tab" href="#assessments-details" role="tab">{{ trans("Ceres::Template.singleItemMoreDetails") }}</a>
         </li>
@@ -25,9 +33,6 @@
             <div class="tab-pane active overflow-auto" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
                 <div class="my-4" v-html="currentVariation.texts.description">
                 </div>
-
-                Video:<br>
-                 {{ var.free7 }}
             </div>
         {% endif %}
 
@@ -37,6 +42,19 @@
                 </div>
             </div>
         {% endif %}
+
+        {% if var.free7 %}
+
+	        <div class="tab-pane" id="my-custom-tab" role="tabpanel">
+	            <div class="m-y-2">
+	                <div class='embed-container yt-videos'>
+	                    {{ var.free7 }}
+	                </div>
+	            </div>
+	        </div>
+
+        {% endif %}
+
 
         <div :class="{ 'active': !isDescriptionTabActive && !isTechnicalDataTabActive }" class="tab-pane" id="assessments-details" role="tabpanel">
             <div class="my-4">

@@ -383,6 +383,7 @@ p.fp24-intro {
     color: black;
 }
 
+
 /** FRONT SLIDER **/
 
 .fp24-slide-text {
@@ -459,6 +460,32 @@ span.fp24-slide-button:hover {
 }
 
 
+/** SINGLE ITEM **/
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+span.availability.badge {
+    padding: 10px;
+    font-size: 12px;
+}
+
+span.availability.badge *{
+    color: white;
+}
 
 /** FOOTER **/
 
@@ -552,11 +579,3 @@ ul.vorteile-liste li:before {
     padding: 10px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
