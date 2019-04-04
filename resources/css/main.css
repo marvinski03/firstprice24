@@ -641,6 +641,24 @@ ul.vorteile-liste li:before {
     text-align: center;
 }
 
+.basket-preview-content div#ppButton,
+.basket-preview-content .amzPayButton {
+    width: 40%;
+}
+
+.basket-preview-content div#ppButton *,
+.basket-preview-content .amzPayButton *{
+    max-width: 100%;
+    height: auto;
+}
+
+.basket-preview-content  div#ppButton {
+    position: relative;
+    right: calc(-40% - 7px);
+    top: -45px;
+    margin-bottom: -35px;
+}
+
 
 @media(max-width: 768px){
     .brand-wrapper .navbar-brand img{
