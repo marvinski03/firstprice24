@@ -267,6 +267,10 @@ body>#vue-app>.wrapper-right {
 
 /** CONTENT **/
 
+body>#vue-app.overlay::after, body>#vue-app.open-right::after, body>#vue-app.open-left::after, body>#vue-app.open-top::after, body>#vue-app.open-bottom::after, body>#vue-error.overlay::after, body>#vue-error.open-right::after, body>#vue-error.open-left::after, body>#vue-error.open-top::after, body>#vue-error.open-bottom::after {
+    z-index: 99999;
+}
+
 .cmp-product-thumb .special-tags{
     display: none;
 }
