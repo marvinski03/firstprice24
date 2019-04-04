@@ -281,6 +281,10 @@ div#page-body {
     margin-top: 60px;
 }
 
+#front-page .badge {
+    display: none;
+}
+
 p.fp24-intro {
     font-size: 18px;
     text-align: center;
