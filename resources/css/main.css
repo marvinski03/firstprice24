@@ -267,6 +267,10 @@ body>#vue-app>.wrapper-right {
 
 /** CONTENT **/
 
+.cmp-product-thumb .special-tags{
+    direction: : none;
+}
+
 div#page-body {
     padding-top: 30px;
 }
