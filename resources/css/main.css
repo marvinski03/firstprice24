@@ -268,7 +268,7 @@ body>#vue-app>.wrapper-right {
 /** CONTENT **/
 
 .cmp-product-thumb .special-tags{
-    direction: : none;
+    display: none;
 }
 
 div#page-body {
