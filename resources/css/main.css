@@ -652,11 +652,15 @@ ul.vorteile-liste li:before {
     height: auto;
 }
 
-.basket-preview-content  div#ppButton {
+.basket-preview-content div#ppButton {
     position: relative;
     right: calc(-40% - 7px);
     top: -45px;
     margin-bottom: -35px;
+}
+
+.text-primary {
+    color: black !important;
 }
 
 
