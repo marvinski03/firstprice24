@@ -361,6 +361,10 @@ p.fp24-intro {
     margin: 20px 20px 0px 20px;
 }
 
+.widget-primary .bg-appearance {
+    background: none;
+}
+
 /** KATEGORIE **/  
 
 .page-content {
