@@ -50,7 +50,9 @@ jQuery(document).ready(function() {
 	    jQuery(".fp24-some-share .social-share.linkedin").on("click", function() {
 	        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
 	        socialWindow(url);
-	    })
+	    });
 	}
+
+	setShareLinks();
 	
 });
