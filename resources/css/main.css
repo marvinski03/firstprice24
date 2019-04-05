@@ -486,6 +486,21 @@ span.fp24-slide-button:hover {
     color: #333333;
 }
 
+.fp24-some-share {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.fp24-some-share li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fp24-some-share li:hover{
+    opacity: 0.5;
+}
+
 
 /** SINGLE ITEM **/
 
