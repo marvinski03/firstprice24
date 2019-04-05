@@ -502,6 +502,24 @@ span.fp24-slide-button:hover {
     opacity: 0.5;
 }
 
+.sidebar-categories ul li.active>a {
+    background: none;
+    font-weight: bold !important;
+    color: #000000 !important;
+}
+
+.sidebar-categories ul li a{
+    font-size: 16px;
+}
+
+.sidebar-categories > ul > li {
+    border-bottom: 1px solid #dadada;
+}
+
+.sidebar-categories .category-title {
+    font-size: 16px;
+    padding-left: 1.25rem;
+}
 
 /** SINGLE ITEM **/
 
