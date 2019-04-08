@@ -8,9 +8,9 @@
         {% endif %}
 
         {% if 'item.technical_data' in itemData or 'all' in itemData %}
-            <li class="nav-item" v-if="isTechnicalDataTabActive">
+            <!-- <li class="nav-item" v-if="isTechnicalDataTabActive">
                 <a :class="{ 'active': !isDescriptionTabActive && isTechnicalDataTabActive }" class="nav-link" data-toggle="tab" :href="'#data-' + currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.singleItemTechnicalData") }}</a>
-            </li>
+            </li> -->
         {% endif %}
 
         {% if var.free7 %}
@@ -37,10 +37,10 @@
         {% endif %}
 
         {% if 'item.technical_data' in itemData or 'all' in itemData %}
-            <div :class="{ 'active': !isDescriptionTabActive && isTechnicalDataTabActive }" class="tab-pane" :id="'data-' + currentVariation.variation.id" role="tabpanel" v-if="isTechnicalDataTabActive">
+            <!-- <div :class="{ 'active': !isDescriptionTabActive && isTechnicalDataTabActive }" class="tab-pane" :id="'data-' + currentVariation.variation.id" role="tabpanel" v-if="isTechnicalDataTabActive">
                 <div class="my-4" v-html="currentVariation.texts.technicalData">
                 </div>
-            </div>
+            </div> -->
         {% endif %}
 
         {% if var.free7 %}
