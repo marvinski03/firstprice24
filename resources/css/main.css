@@ -463,6 +463,7 @@ span.fp24-slide-button:hover {
 
 .row.vorteile > div {
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .vorteile .vorteil-img{
