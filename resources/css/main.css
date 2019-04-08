@@ -601,6 +601,10 @@ ul.breadcrumb * {
     font-size: 13px !important;
 }
 
+.mobile-navigation ul.breadcrumb * {
+    color: white !important;
+}
+
 .single.container-max.page-content > div {
     margin-bottom: 60px;
 }
