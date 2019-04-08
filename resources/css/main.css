@@ -302,6 +302,10 @@ div#page-body {
     display: none;
 }
 
+#front-page .badge.availability-preview {
+    display: inline-block;
+}
+
 p.fp24-intro {
     font-size: 18px;
     text-align: center;
