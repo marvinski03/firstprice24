@@ -388,6 +388,14 @@ p.fp24-intro {
     background: white !important;
 } 
 
+small, .small, .btn-labeled, .basket-preview .totals{
+    font-size: 90%;
+}
+
+.cmp-product-thumb .price{
+    color: black !important;
+}
+
 .row.kategorie-beschreibung-lang {
     margin-top: 100px;
     border-top: 5px solid #007bff;
