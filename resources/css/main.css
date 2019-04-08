@@ -569,6 +569,10 @@ ul.breadcrumb * {
     color: grey;
 }
 
+.single.container-max.page-content > div {
+    margin-bottom: 60px;
+}
+
 .btn-outline-primary {
     color: #333;
     border-color: #333;
