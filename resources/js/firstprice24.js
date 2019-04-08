@@ -54,5 +54,10 @@ jQuery(document).ready(function() {
 	}
 
 	setShareLinks();
+
+
+	/** AMZN PAYMENT BEFORE FINANCING @ SINGLE ITEM **/
+
+	$(".single .amzPayButton").insertBefore(".paypal-installment-specific-promotion");
 	
 });

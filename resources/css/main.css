@@ -619,6 +619,11 @@ a.item-name.text-primary.text-appearance{
     color: #333 !important;
 }
 
+.single .amzPayButton {
+    margin-left: 15px;
+    max-width: 160px;
+}
+
 /** FOOTER **/
 
 .footer {
