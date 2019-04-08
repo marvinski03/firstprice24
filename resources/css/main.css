@@ -306,6 +306,11 @@ div#page-body {
     display: inline-block;
 }
 
+.availability-preview.badge {
+    padding-left: 0px;
+    font-size: 90%;
+}
+
 p.fp24-intro {
     font-size: 18px;
     text-align: center;
