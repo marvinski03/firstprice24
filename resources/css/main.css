@@ -605,6 +605,14 @@ ul.breadcrumb * {
     color: white !important;
 }
 
+div#add-item-to-basket-overlay #ppButton,
+div#add-item-to-basket-overlay .amzPayButton {
+    float: right;
+    display: block !important;
+    text-align: right;
+    margin: 0px 10px 10px 0px;
+}
+
 .single.container-max.page-content > div {
     margin-bottom: 60px;
 }
