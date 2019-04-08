@@ -592,6 +592,8 @@ ul.nav.nav-tabs a {
 
 ul.breadcrumb * {
     color: grey;
+    font-weight: bold !important;
+    font-size: 13px !important;
 }
 
 .single.container-max.page-content > div {
