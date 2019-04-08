@@ -416,6 +416,11 @@ small, .small, .btn-labeled, .basket-preview .totals{
     left: calc(50% - 12px);
 }
 
+.basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-name {
+    font-size: 100%;
+    line-height: 100% !important;
+}
+
 .row.kategorie-beschreibung-lang:after {
     content: "Weitere Informationen zum Thema";
     display: block;
