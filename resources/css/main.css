@@ -307,8 +307,8 @@ div#page-body {
 }
 
 .availability-preview.badge {
-    padding-left: 0px;
-    font-size: 90%;
+    padding-left: 0px !important;
+    font-size: 90% !important;
 }
 
 p.fp24-intro {
