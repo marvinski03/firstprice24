@@ -85,19 +85,21 @@
 
                     {{ AddToBasket.printVueComponent( "itemData", false, false, { ":has-price": "itemData | hasItemDefaultPrice" } ) }}
 
-                    <span class="vat small text-muted">
+                    <!--<span class="vat small text-muted">
                         * <span v-if="showNetPrices">{{ trans("Ceres::Template.itemExclVAT") }}</span>
                         <span v-else>{{ trans("Ceres::Template.itemInclVAT") }}</span>
                         {{ trans("Ceres::Template.itemExclusive") }}
                         <a {% if ceresConfig.global.shippingCostsCategoryId > 0 %} data-toggle="modal" href="#shippingscosts"{% endif %} title="{{ trans("Ceres::Template.itemShippingCosts") }}">{{ trans("Ceres::Template.itemShippingCosts") }}</a>
-                    </span>
+                    </span>-->
+
+                    <div class="availability-preview badge availability_${ itemData.variation.availability.id }">
+				        <span>
+				            ${ itemData.variation.availability.names.name }
+				        </span>
+	                </div>
                 </div>
 
-                <div class="availability-preview badge availability_${ itemData.variation.availability.names.id }">
-			        <span>
-			            ${ itemData.variation.availability.names.name }
-			        </span>
-                </div>
+                
 
 
             </slot>
