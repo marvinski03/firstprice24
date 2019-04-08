@@ -59,5 +59,15 @@ jQuery(document).ready(function() {
 	/** AMZN PAYMENT BEFORE FINANCING @ SINGLE ITEM **/
 
 	$(".single .amzPayButton").insertBefore(".paypal-installment-specific-promotion");
+
+	/** COLORS FOR AVAILABILITY **/
+
+	var availableGreen = "Innerhalb von 24h versandfertig";
+	$(".availability-preview").each(function(){
+	    if( $(this).children().text().indexOf(availableGreen) >= 0 ){
+	        $(this).addClass("green-label");
+	    }
+	});
+
 	
 });
