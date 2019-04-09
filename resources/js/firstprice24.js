@@ -62,12 +62,19 @@ jQuery(document).ready(function() {
 
 	/** COLORS FOR AVAILABILITY **/
 
-	var availableGreen = "Innerhalb von 24h versandfertig";
-	$(".availability-preview").each(function(){
-	    if( $(this).children().text().indexOf(availableGreen) >= 0 ){
-	        $(this).addClass("green-label");
-	    }
-	});
+	function labelcolor(){
+		var availableGreen = "Innerhalb von 24h versandfertig";
+		$(".availability-preview").each(function(){
+		    if( $(this).children().text().indexOf(availableGreen) >= 0 ){
+		        $(this).addClass("green-label");
+		    }
+		});
+	}
+	
+	labelcolor();
 
+	setTimeout(function(){
+		labelcolor();
+	}, 1000);
 	
 });
