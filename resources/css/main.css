@@ -229,6 +229,15 @@ body>#vue-app>.wrapper-right {
 	    background: #ffffff2b;
 	}
 
+    #mainNavbarCollapsable ul.mainmenu li ul li a{
+        background: #4568f0 !important;
+        color: white !important;
+    }
+
+    #mainNavbarCollapsable ul.mainmenu li ul li:hover a{
+        background: #4566f0 !important;
+    }
+
 	#searchBox{
 	    background-color: #fcca40f0;
 	    width: 100%;
