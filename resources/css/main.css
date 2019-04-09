@@ -280,8 +280,15 @@ body>#vue-error.open-bottom::after {
     z-index: 99999;
 }
 
-.cmp-product-thumb .special-tags{
-    display: none;
+.cmp-product-thumb .special-tags {
+    top: -7px;
+    left: -7px;
+}
+
+.cmp-product-thumb .special-tags span.badge {
+    box-shadow: none !important;
+    padding: 4px 15px !important;
+    top: 0px !important;
 }
 
 div#page-body {
