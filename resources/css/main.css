@@ -273,6 +273,10 @@ body>#vue-app>.wrapper-right {
 	}
 }
 
+.widget-caption.mb-3.bg-appearance a {
+    display: none;
+}
+
 
 /** CONTENT **/
 
