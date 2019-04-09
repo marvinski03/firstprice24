@@ -305,10 +305,6 @@ div#page-body {
     margin-top: 60px;
 }
 
-#front-page .badge {
-    display: none;
-}
-
 #front-page .badge.availability-preview {
     display: inline-block;
 }
