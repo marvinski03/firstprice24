@@ -392,7 +392,8 @@ small, .small, .btn-labeled, .basket-preview .totals{
     font-size: 90%;
 }
 
-.cmp-product-thumb .price{
+.cmp-product-thumb .price,
+.cmp-product-thumb .thumb-title{
     color: black !important;
 }
 
