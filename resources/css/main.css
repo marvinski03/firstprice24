@@ -544,6 +544,7 @@ span.fp24-slide-button:hover {
     color: #fccb40;
 }
 
+
 .vorteile{
     margin-top: 75px;
 }
@@ -887,6 +888,41 @@ ul.vorteile-liste li:before {
         font-size: 12px;
         padding: 5px 27px 4px 8px;
         margin-top: 10px;
+    }
+
+    .carousel-control-next:before,
+    .carousel-control-prev:before {
+        font-size: 18px;
+    }
+
+    .carousel-control-prev{
+        left: -36px;
+    }
+
+    .carousel-control-next{
+        right: -36px;
+    }
+
+    .fp24-front img.img-fluid {
+        height: 200px;
+        width: auto !important;
+        max-width: 300% !important;
+    }
+
+    .fp24-front img.img-fluid {
+        height: 200px;
+        width: auto !important;
+        max-width: 300% !important;
+    }
+
+    span.fp24-slide-text-bottom {
+        display: none;
+    }
+
+    span.fp24-slide-button {
+        margin-top: 0px;
+        position: relative;
+        top: -10px;
     }
 
 }
