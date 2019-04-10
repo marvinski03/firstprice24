@@ -909,11 +909,11 @@ ul.vorteile-liste li:before {
         max-width: 300% !important;
     }
 
-    .fp24-front img.img-fluid {
-        height: 200px;
-        width: auto !important;
-        max-width: 300% !important;
+    .fp24-front img.img-fluid.mobile-right {
+        float: right;
     }
+
+
 
     span.fp24-slide-text-bottom {
         display: none;
