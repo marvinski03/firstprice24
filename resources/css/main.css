@@ -927,6 +927,14 @@ ul.vorteile-liste li:before {
 
 }
 
+.wish-list-name {
+    color: black;
+}
+
+.wish-list-name:hover {
+    color: #fccb40;
+}
+
 @media(max-width: 400px){
     .fp24-front img.img-fluid {
         min-height: 160px;
