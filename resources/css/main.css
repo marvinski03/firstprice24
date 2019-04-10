@@ -296,6 +296,7 @@ body>#vue-error.open-bottom::after {
 @media (max-width: 767.98px){
     body>#vue-app.open-right, body>#vue-error.open-right {
         height: 100%;
+        z-index: 9999999999;
     }
 }
 
