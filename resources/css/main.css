@@ -748,11 +748,13 @@ a.item-name.text-primary.text-appearance{
     color: white;
 }
 
-.footer p a{
+.footer p a,
+.copy-footer a{
 	color: #fbbd00;
 }
 
-.footer p a:hover{
+.footer p a:hover,
+.copy-footer a:hover{
 	color: white;
 	text-decoration: underline;
 }
