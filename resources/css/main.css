@@ -293,6 +293,12 @@ body>#vue-error.open-bottom::after {
     z-index: 99999;
 }
 
+@media (max-width: 767.98px){
+    body>#vue-app.open-right, body>#vue-error.open-right {
+        height: 100%;
+    }
+}
+
 .cmp-product-thumb .special-tags {
     top: -7px;
     left: -7px;
