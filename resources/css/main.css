@@ -896,11 +896,11 @@ ul.vorteile-liste li:before {
     }
 
     .carousel-control-prev{
-        left: -36px;
+        left: -33px;
     }
 
     .carousel-control-next{
-        right: -36px;
+        right: -33px;
     }
 
     .fp24-front img.img-fluid {
