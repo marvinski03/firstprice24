@@ -511,6 +511,24 @@ span.fp24-slide-button:hover {
     background-color: #ffdf85;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    max-width: 60px;
+}
+
+.carousel-control.carousel-control-next:before {
+    content: "";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #4d4f4d;
+    font-size: 30px;
+}
+
+.carousel-control.carousel-control-prev:before {
+    content: "";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #4d4f4d;
+    font-size: 30px;
+}
+
 .vorteile{
     margin-top: 75px;
 }
