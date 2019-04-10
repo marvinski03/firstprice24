@@ -76,5 +76,9 @@ jQuery(document).ready(function() {
 	setTimeout(function(){
 		labelcolor();
 	}, 1000);
-	
+
+
+	setTimeout(function(){
+		labelcolor();
+	}, 3000);	
 });
