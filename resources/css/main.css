@@ -740,6 +740,10 @@ a.item-name.text-primary.text-appearance{
     background: #333;
 }
 
+.footer img {
+    max-width: 100%;
+}
+
 .footer * {
     color: white;
 }
