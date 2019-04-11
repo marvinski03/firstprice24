@@ -315,7 +315,8 @@ body>#vue-error.open-bottom::after {
     top: 0px !important;
 }
 
-.cmp-product-thumb .crossprice {
+.cmp-product-thumb .crossprice,
+.single-rightside .crossprice {
     font-size: 14px;
     font-weight: 700;
     color: #000000;
@@ -323,15 +324,8 @@ body>#vue-error.open-bottom::after {
     position: relative;
 }
 
-.cmp-product-thumb .crossprice {
-    font-size: 14px;
-    font-weight: 700;
-    color: #000000;
-    text-decoration: none;
-    position: relative;
-}
-
-del.crossprice:before {
+del.crossprice:before,
+.single-rightside .crossprice del:before{
     content: "";
     width: 100%;
     height: 2px;
