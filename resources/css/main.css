@@ -838,6 +838,10 @@ p.fp24-footer-title{
     display: inline-block;
 }
 
+img.category-image-fp {
+    margin: 10px 0px;
+}
+
 ul.fp24-links {
     list-style: none;
     margin: 0px;
