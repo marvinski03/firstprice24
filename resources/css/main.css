@@ -740,6 +740,14 @@ a.item-name.text-primary.text-appearance{
     font-size: 16px;
 }
 
+.sidebar-categories > ul > li.active > a {
+    background: #fcca40;
+}
+
+.sidebar-categories > ul > li.active > a {
+    background: #fcca40;
+}
+
 .checkout .paypal-installment-specific-promotion {
     margin-top: 15px;
     margin-bottom: 10px;
