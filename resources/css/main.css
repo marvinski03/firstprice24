@@ -75,9 +75,9 @@ body>#vue-app .wrapper-main, body>#vue-error .wrapper-main {
 /** HEADER **/
 
 header#page-header.fixed-top {
-    position: inherit;
-    width: auto;
-    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 .wrapper-main .navbar{
@@ -94,6 +94,10 @@ header#page-header.fixed-top {
     background-repeat: no-repeat !important;
     background-position: left center !important;
     padding: 15px 30px;
+}
+
+.wrapper.wrapper-main {
+    padding-top: 90px;
 }
 
 .brand-wrapper .navbar-brand img {
@@ -206,6 +210,10 @@ body>#vue-app>.wrapper-right {
 	#mainNavbarCollapsable ul.mainmenu>li a:after {
 	    display: none !important;
 	}
+
+    .wrapper.wrapper-main {
+        padding-top: 60px;
+    }
 
 	#mainNavbarCollapsable ul.mainmenu>li>a {
 	    padding: 12px 8px 10px 8px;
@@ -892,6 +900,10 @@ ul.vorteile-liste li:before {
 @media(max-width: 768px){
     .brand-wrapper .navbar-brand img{
         max-width: 160px;
+    }
+
+    .wrapper.wrapper-main {
+        padding-top: 30px;
     }
 
     .brand-wrapper{
