@@ -833,6 +833,11 @@ p.fp24-footer-title{
     }
 }
 
+.single-rightside span.articlenumber.small.text-muted b {
+    min-width: 91px;
+    display: inline-block;
+}
+
 ul.fp24-links {
     list-style: none;
     margin: 0px;
