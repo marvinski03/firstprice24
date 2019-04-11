@@ -211,10 +211,6 @@ body>#vue-app>.wrapper-right {
 	    display: none !important;
 	}
 
-    .wrapper.wrapper-main {
-        padding-top: 60px;
-    }
-
 	#mainNavbarCollapsable ul.mainmenu>li>a {
 	    padding: 12px 8px 10px 8px;
 	    font-size: 16px;
@@ -831,6 +827,10 @@ p.fp24-footer-title{
 	p.fp24-footer-title {
 	    padding-top: 50px;
 	}
+
+     .wrapper.wrapper-main {
+        padding-top: 60px;
+    }
 }
 
 ul.fp24-links {
