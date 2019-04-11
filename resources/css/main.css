@@ -316,7 +316,7 @@ body>#vue-error.open-bottom::after {
 }
 
 .cmp-product-thumb .crossprice,
-.single-rightside .crossprice {
+.single-rightside .crossprice del{
     font-size: 14px;
     font-weight: 700;
     color: #000000;
