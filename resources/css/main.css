@@ -96,8 +96,8 @@ header#page-header.fixed-top {
     padding: 15px 30px;
 }
 
-.wrapper.wrapper-main {
-    padding-top: 90px;
+.wrapper.header-wrap.wrapper-main {
+    padding-top: 218px;
 }
 
 .brand-wrapper .navbar-brand img {
@@ -828,8 +828,8 @@ p.fp24-footer-title{
 	    padding-top: 50px;
 	}
 
-     .wrapper.wrapper-main {
-        padding-top: 60px;
+    .wrapper.header-wrap.wrapper-main {
+        padding-top: 169px;
     }
 }
 
@@ -928,8 +928,8 @@ ul.vorteile-liste li:before {
         max-width: 160px;
     }
 
-    .wrapper.wrapper-main {
-        padding-top: 30px;
+    .wrapper.header-wrap.wrapper-main {
+        padding-top: 124px !important;
     }
 
     .brand-wrapper{
