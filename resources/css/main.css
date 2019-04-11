@@ -896,6 +896,10 @@ ul.vorteile-liste li:before {
     color: black !important;
 }
 
+.category-description{
+    font-size: 16px;
+}
+
 
 @media(max-width: 768px){
     .brand-wrapper .navbar-brand img{
