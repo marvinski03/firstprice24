@@ -24,7 +24,11 @@
                     {% endif %}
                 </h1>
 
-                
+                {% if category.details[0].imagePath is not empty %} 
+                    <img src="/documents/{{ category.details[0].imagePath }}" class="category-image-fp"/>
+                {% endif %}
+
+
 
                 {% if category.details[0].description %}
                     <div class="category-description mb-3">{{ category.details[0].description | raw }}</div>
