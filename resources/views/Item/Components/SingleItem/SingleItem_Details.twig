@@ -1,7 +1,4 @@
 <div v-stick-in-parent>
-    <div class="producertag h6 producer text-muted" v-if="currentVariation.filter.hasManufacturer">
-        ${ currentVariation.item.manufacturer.externalName }
-    </div>
 
     <h1 class="h2 title">
         <span>
@@ -19,6 +16,11 @@
         <span class="articlenumber small text-muted">
             <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
             <span>${ currentVariation.item.id }</span>
+        </span>
+
+        <span class="articlenumber small text-muted">
+            <b>Hersteller</b>
+            <span>${ currentVariation.item.manufacturer.externalName }</span>
         </span>
     </div>
 
