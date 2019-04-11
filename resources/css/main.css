@@ -946,6 +946,12 @@ ul.vorteile-liste li:before {
     .desktop-top-bar-usps {
          display: none !important;
     }
+
+    .row.mx-0.top-bar-row{
+        -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+        flex-direction: row-reverse !important;
+    }
 }
 
 @media(max-width: 768px){
