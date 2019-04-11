@@ -339,6 +339,16 @@ div#page-body {
     padding-top: 30px;
 }
 
+@media(max-width: 400px){
+    .cmp-product-thumb .prices {
+        display: block;
+    }
+
+    .cmp-product-thumb .prices .price-view-port {
+        margin-bottom: 5px;
+    }
+}
+
 .fp24-title,
 #front-page h1,
 #front-page h2,
