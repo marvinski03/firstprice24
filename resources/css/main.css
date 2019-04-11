@@ -736,6 +736,10 @@ a.item-name.text-primary.text-appearance{
         border: none;
 }
 
+.row.cmp-contact * {
+    font-size: 16px;
+}
+
 .checkout .paypal-installment-specific-promotion {
     margin-top: 15px;
     margin-bottom: 10px;
