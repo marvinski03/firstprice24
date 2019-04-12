@@ -844,7 +844,7 @@ p.fp24-footer-title{
 
 img.category-image-fp {
     margin: 10px 0px;
-    max-width: 150%;
+    max-width: 100%;
 }
 
 ul.fp24-links {
@@ -1069,6 +1069,6 @@ ul.vorteile-liste li:before {
         min-height: 160px;
         width: auto !important;
         max-width: 9999px !important;
-        max-height: 140px;
+        max-height: 200px;
     }
 }
