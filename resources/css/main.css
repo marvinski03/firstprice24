@@ -840,6 +840,7 @@ p.fp24-footer-title{
 .single-rightside span.articlenumber.small.text-muted b {
     min-width: 91px;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 img.category-image-fp {
