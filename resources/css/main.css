@@ -1046,6 +1046,16 @@ ul.vorteile-liste li:before {
         top: -10px;
     }
 
+    body>#vue-app{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .wrapper.header-wrap.wrapper-main, .wrapper.footer-wrap.wrapper-main{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
 }
 
 .form-check label.form-check-label {
