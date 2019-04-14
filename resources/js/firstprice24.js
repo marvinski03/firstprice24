@@ -2,6 +2,9 @@ jQuery(document).ready(function() {
 
 	jQuery(".search-input").attr("placeholder","Suchbegriff eingeben und Enter drücken...");
 
+	/** ADD ART NR **/
+
+	$("#ask-a-question").attr("href",$("#ask-a-question").attr("href")+$("#art-nr-wrp").text());
 
 	/** PP PLUS **/
 
