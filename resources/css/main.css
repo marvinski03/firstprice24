@@ -687,7 +687,7 @@ ul.nav.nav-tabs a {
     color: black;
 }
 
-@media (min-width: 768px){
+
     .single .nav-tabs .nav-item .nav-link.active {
         background: #fccb40;
         color: #333 !important;
@@ -696,7 +696,7 @@ ul.nav.nav-tabs a {
     .single .nav-tabs .nav-item .nav-link {
         font-size: 15px;
     }
-}
+
 
 ul.breadcrumb * {
     color: grey;
