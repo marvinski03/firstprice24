@@ -1086,7 +1086,7 @@ ul.vorteile-liste li:before {
     color: #fccb40;
 }
 
-@media(max-width: 400px){
+@media(max-width: 430px){
     .fp24-front img.img-fluid {
         min-height: 160px;
         width: auto !important;
@@ -1104,6 +1104,13 @@ ul.vorteile-liste li:before {
 
     .list-controls.mb-5.row {
         display: none;
+    }
+
+    .page-content.basket,
+    .page-content.checkout,
+    .page-content.contact,
+    .page-content.myaccount {
+        margin-top: -15px;
     }
 }
 
