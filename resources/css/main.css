@@ -1093,4 +1093,17 @@ ul.vorteile-liste li:before {
         max-width: 9999px !important;
         max-height: 200px;
     }
+
+    .wrapper.header-wrap.wrapper-main {
+        padding-top: 80px !important;
+    }
+
+    h1#searchPageTitle {
+        margin-top: -25px;
+    }
 }
+
+
+
+
+
