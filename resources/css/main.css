@@ -1107,7 +1107,16 @@ ul.vorteile-liste li:before {
         display: none;
     }
 
+    .page-content.basket,
+    .page-content.checkout,
+    .page-content.contact,
+    .page-content.myaccount {
+        margin-top: -10px;
+    }
 
+    .container-max.login{
+        margin-top: 10px !important;
+    }
 
     h1.login-view-title.mb-5 {
         margin-bottom: 20px !important;
