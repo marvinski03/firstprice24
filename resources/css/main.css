@@ -1101,6 +1101,10 @@ ul.vorteile-liste li:before {
     h1#searchPageTitle {
         margin-top: -25px;
     }
+
+    .list-controls.mb-5.row {
+        display: none;
+    }
 }
 
 
