@@ -1114,9 +1114,12 @@ ul.vorteile-liste li:before {
     }
 
     .container-max.login{
-        margin-top: 0px !important;
+        margin-top: 10px !important;
     }
-    
+
+    h1.login-view-title.mb-5 {
+        margin-bottom: 20px !important;
+    }
 }
 
 
