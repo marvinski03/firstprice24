@@ -1087,15 +1087,16 @@ ul.vorteile-liste li:before {
 }
 
 @media(max-width: 430px){
+
+    div#tsbadgeResponsiveTop_db8d3657bdbe440c985ae127463eaad4 {
+        display: none !important;
+    }
+
     .fp24-front img.img-fluid {
         min-height: 160px;
         width: auto !important;
         max-width: 9999px !important;
         max-height: 200px;
-    }
-
-    .wrapper.header-wrap.wrapper-main {
-        padding-top: 80px !important;
     }
 
     h1#searchPageTitle {
@@ -1106,16 +1107,7 @@ ul.vorteile-liste li:before {
         display: none;
     }
 
-    .page-content.basket,
-    .page-content.checkout,
-    .page-content.contact,
-    .page-content.myaccount {
-        margin-top: -15px;
-    }
 
-    .container-max.login{
-        margin-top: 10px !important;
-    }
 
     h1.login-view-title.mb-5 {
         margin-bottom: 20px !important;
