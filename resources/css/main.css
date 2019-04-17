@@ -1121,6 +1121,10 @@ ul.vorteile-liste li:before {
     h1.login-view-title.mb-5 {
         margin-bottom: 20px !important;
     }
+
+    .brand-wrapper {
+        padding: 0px 30px 5px 8px;
+    }
 }
 
 
