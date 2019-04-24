@@ -578,6 +578,10 @@ span.fp24-slide-button:hover {
     color: #fccb40;
 }
 
+.carousel-item{
+    overflow: hidden !important;
+}
+
 
 .vorteile{
     margin-top: 75px;
