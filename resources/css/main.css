@@ -17,6 +17,10 @@
   color: #333;
 }
 
+.cc-window {
+    z-index: 99999999990;
+}
+
 /** GENERAL & CONTAINER **/
 
 .pluginset-preview-overlay{
