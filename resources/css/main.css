@@ -21,6 +21,25 @@
     z-index: 99999999990;
 }
 
+.holiday-txt * {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px !important;
+}
+
+.holiday-txt {
+    max-width: 800px !important;
+    margin: 60px auto 0px auto;
+    background: #4568f012;
+    padding: 40px;
+}
+
+p.holi-title {
+    font-size: 28px !important;
+}
+
+
+
 /** GENERAL & CONTAINER **/
 
 .pluginset-preview-overlay{
