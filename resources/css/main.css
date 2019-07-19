@@ -828,7 +828,6 @@ a.item-name.text-primary.text-appearance{
 }
 
 .single .amzPayButton {
-    margin-left: 15px;
     max-width: 160px;
 }
 
@@ -894,6 +893,10 @@ p.fp24-footer-title{
     min-width: 110px;
     display: inline-block;
     margin-bottom: 10px;
+}
+
+.single-add-to{
+    max-width: 350px;
 }
 
 img.category-image-fp {
