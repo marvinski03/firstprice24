@@ -26,16 +26,15 @@ class FirstPrice24ServiceProvider extends ServiceProvider
     }
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
-    {   
+    {
 
         $twig->addExtension(FirstPrice24GetFreitext::class);
-
+        
         $enabledOverrides = explode(", ", $config->get("FirstPrice24.templates.override"));
 
         // Override partials
         $dispatcher->listen('IO.init.templates', function (Partial $partial) use ($enabledOverrides)
         {
-
             $partial->set('head', 'Ceres::PageDesign.Partials.Head');
             $partial->set('header', 'Ceres::PageDesign.Partials.Header.Header');
             $partial->set('page-design', 'Ceres::PageDesign.PageDesign');
