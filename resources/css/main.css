@@ -258,7 +258,8 @@ body>#vue-app>.wrapper-right {
 	    width: 100% !important;
 	    border-bottom: 5px solid #4567F1;
 	    padding-left: 23px;
-            display: block !important;
+        display: block !important;
+        text-align: left !important;
 	}
 
 	#mainNavbarCollapsable ul.mainmenu li.ddown:hover ul {
