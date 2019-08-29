@@ -1,3 +1,5 @@
+{% set var = getFree(item.documents[0].data.item.id) %}
+
 <!-- ITEM DESCRIPTION -->
 <div class="my-5">
     <ul class="nav nav-tabs" role="tablist">
@@ -43,7 +45,6 @@
             </div> -->
         {% endif %}
 
-        {% if var.free7 %}
 
 	        <div class="tab-pane" id="my-custom-tab" role="tabpanel">
 	            <div class="m-y-2">
@@ -53,7 +54,7 @@
 	            </div>
 	        </div>
 
-        {% endif %}
+
 
 
         <slot name="AddDetailTabsContent"></slot>
