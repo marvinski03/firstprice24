@@ -38,6 +38,12 @@ p.holi-title {
     font-size: 28px !important;
 }
 
+.widget-caption.mb-3.bg-appearance,
+.widget-caption.mb-3.bg-appearance * {
+    background: none !important;
+    text-align: center !important;
+    width: 100%;
+}
 
 
 /** GENERAL & CONTAINER **/
