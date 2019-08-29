@@ -13,13 +13,13 @@
             </li> -->
         {% endif %}
 
-
+        {% if var.free7 %}
 
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#my-custom-tab" role="tab">Produktvideo</a>
             </li>
 
-
+        {% endif %}
 
        <!-- <li class="nav-item">
             <a :class="{ 'active': !isDescriptionTabActive && !isTechnicalDataTabActive }" class="nav-link" data-toggle="tab" href="#assessments-details" role="tab">{{ trans("Ceres::Template.singleItemMoreDetails") }}</a>
@@ -48,7 +48,7 @@
 	        <div class="tab-pane" id="my-custom-tab" role="tabpanel">
 	            <div class="m-y-2">
 	                <div class='embed-container yt-videos'>
-	                    {{ var.free7|raw }}
+	                    <slot name="produktvideo"></slot>
 	                </div>
 	            </div>
 	        </div>
