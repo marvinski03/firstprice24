@@ -9,6 +9,8 @@
 {{ component( "FirstPrice24::Item.Components.SingleItem" ) }}
 {{ component( "Ceres::Item.Components.VariationSelect" ) }}
 
+{% set var = getFree(item.documents[0].data.item.id) %}
+
 <single-item v-cloak item-data="{{ item | json_data }}" attributes-data="{{ attributes | json_data }}" variations="{{ variations | json_data }}">
     <template #produktvideo>{{ var.free7 }}</template>
     <template #before-price>{{ LayoutContainer.show("Ceres::SingleItem.BeforePrice", item.documents[0].data) }}</template>
