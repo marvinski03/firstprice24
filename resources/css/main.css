@@ -1030,6 +1030,10 @@ ul.vorteile-liste li:before {
         max-width: 160px;
     }
 
+    div#front-page {
+        overflow: hidden;
+    }
+
     div#page-body{
         padding-top: 0px;
     }
