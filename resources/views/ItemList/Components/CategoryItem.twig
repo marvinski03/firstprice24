@@ -86,7 +86,7 @@
 
                     {{ AddToBasket.printVueComponent( "item", false, false, { ":has-price": "item | hasItemDefaultPrice" } ) }}
 
-                   <div class="availability-preview badge">
+                   <div class="availability-preview badge" v-if="item.variation.availability.names.name">
                         <span>
                             ${ item.variation.availability.names.name }
                         </span>
