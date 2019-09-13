@@ -89,7 +89,6 @@
             {% endif %}
 
             <div class="col-12 col-lg-{% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}9{% else %}12{% endif %}">
-<<<<<<< HEAD
                 <ul class="product-list row grid">
                     {% for item in itemList %}
                         <li class="col-12 col-sm-6 col-md-4 col-lg-{% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}4{% else %}3{% endif %}">
@@ -102,27 +101,6 @@
                         </li>
                     {% endfor %}
                 </ul>
-=======
-                {% if itemList is not empty %}
-                    <ul class="product-list row grid">
-                        {% for item in itemList %}
-                            <li class="col-12 col-sm-6 col-md-4 col-lg-{% if category is defined and ceresConfig.header.showNavBars in ["side", "both"] %}4{% else %}3{% endif %}">
-                                <category-item
-                                    item-data-ref="{{ item.data | json_data }}"
-                                    :decimal-count="{{ ceresConfig.item.storeSpecial }}">
-                                    <template #before-prices>{{ LayoutContainer.show("Ceres::CategoryItem.BeforePrices", item.data) }}</template>
-                                    <template #after-prices>{{ LayoutContainer.show("Ceres::CategoryItem.AfterPrices", item.data) }}</template>
-
-                                    <a href="{{ item.data | itemURL }}" class="small">
-                                        <i class="fa fa-image"></i>
-                                        <span>{{ item.data | itemName }}</span>
-                                    </a>
-                                </category-item>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
->>>>>>> origin/master
 
                 {% if category is not defined and itemList is empty %}
                     <p class="h3 text-muted mb-5 text-center">{{ trans("Ceres::Template.itemSearchNoResults", {"searchString": searchString}) }}</p>
@@ -140,14 +118,15 @@
 
         {% if category is defined %}
             <div class="container further-cat-infos">
-	            {{ category.details[0].description2 | raw }}
-	        </div>
+                {{ category.details[0].description2 | raw }}
+            </div>
         {% endif %}
     </div>
 
 {% endblock %}
 
 {% block PartialHead %}
+    <script type="application/ld+json">{"@context": "http://schema.org","@type": "WebSite","url": "{{ webstoreConfig.domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ webstoreConfig.domainSsl ~ urls.search }}?query={search_term}","query-input": "required name=search_term"}}</script>
 
     {% set canonicalUrl = services.url.getCanonicalURL() %}
     {% if currentPage - 1 > 0 %}
