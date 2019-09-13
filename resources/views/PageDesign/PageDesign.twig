@@ -12,7 +12,7 @@
 
 {# TODO: remove if shop builder pages can be rebuild by migrations #}
 {{ component( "Ceres::Containers.Components.LastSeenItemList" ) }}
-{{ component( "FirstPrice24::ItemList.Components.CategoryItem") }}
+{{ component( "Ceres::ItemList.Components.CategoryItem") }}
 {{ component( "Ceres::Newsletter.Components.NewsletterInput" ) }}
 {{ component( "Ceres::PageDesign.Components.Carousel" ) }}
 
@@ -225,10 +225,10 @@
 
 {{ Translations.add( "Ceres", "Template" ) }}
 {% if ceresConfig.log.performanceLevel  == 'development' %}
-    <script src="{{ plugin_path('Ceres') }}/js/dist/ceres-vendor.js"></script>
-    <script src="{{ plugin_path('Ceres') }}/js/dist/ceres-app.js"></script>
+    <script src="{{ plugin_path('Ceres') }}/js/dist/ceres-vendor.js?v={{ buildHash }}"></script>
+    <script src="{{ plugin_path('Ceres') }}/js/dist/ceres-app.js?v={{ buildHash }}"></script>
 {% else %}
-    <script src="{{ plugin_path('Ceres') }}/js/dist/ceres.min.js"></script>
+    <script src="{{ plugin_path('Ceres') }}/js/dist/ceres.min.js?v={{ buildHash }}"></script>
 {% endif %}
 
 {% for scriptTemplate in get_additional_scripts() %}
