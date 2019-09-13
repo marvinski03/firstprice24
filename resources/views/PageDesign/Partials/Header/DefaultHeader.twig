@@ -137,7 +137,11 @@
 
         <shop-country-settings
                 country-flag-prefix="flag-icon-"
+<<<<<<< Updated upstream
                 shipping-countries="{{ services.country.getActiveCountriesList() | filterFields(['id','currLangName', 'isoCode2', 'states.id', 'states.name']) | json_data("activeCountriesList") }}" 
+=======
+                shipping-countries="{{ services.country.getActiveCountriesList() | filterFields([...]) | json_data("activeCountriesList") }}"
+>>>>>>> Stashed changes
                 :shipping-country-id="{{ services.checkout.getShippingCountryId }}">
             <div id="countrySettings" class="cmp cmp-country-settings collapse">
                 <div class="container-max">
