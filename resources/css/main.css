@@ -1060,8 +1060,7 @@ ul.vorteile-liste li:before {
     }
 
     img.slide-feature-icons {
-        left: 10px;
-        width: calc(100% - 20px);
+        display:none;
     }
 
     span.fp24-slide-text-top {
