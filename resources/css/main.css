@@ -545,6 +545,11 @@ small, .small, .btn-labeled, .basket-preview .totals{
 
 /** FRONT SLIDER **/
 
+.fp24-slide-text {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
 
 img.slide-feature-icons {
     position: absolute;
