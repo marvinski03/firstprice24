@@ -1065,7 +1065,7 @@ ul.vorteile-liste li:before {
     }
 
     span.fp24-slide-text-top {
-        font-size: 25px;
+        font-size: 20px;
         padding: 0px 15px 0px 15px;
     }
 
@@ -1113,9 +1113,10 @@ ul.vorteile-liste li:before {
     }
 
     span.fp24-slide-button {
-        margin-top: 0px;
-        position: relative;
-        top: -10px;
+            margin-top: 0px;
+    position: relative;
+    top: -15px;
+    font-size: 14px;
     }
 
     body>#vue-app{
