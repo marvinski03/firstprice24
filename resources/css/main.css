@@ -545,10 +545,13 @@ small, .small, .btn-labeled, .basket-preview .totals{
 
 /** FRONT SLIDER **/
 
-.fp24-slide-text {
+
+img.slide-feature-icons {
     position: absolute;
-    top: 25px;
+    bottom: 10px;
     left: 25px;
+    width: calc(100% - 50px);
+    max-width: 356px;
 }
 
 span.fp24-slide-text-top {
@@ -1049,6 +1052,11 @@ ul.vorteile-liste li:before {
     .fp24-slide-text {
         top: 10px;
         left: 10px;
+    }
+
+    img.slide-feature-icons {
+        left: 10px;
+        width: calc(100% - 20px);
     }
 
     span.fp24-slide-text-top {
