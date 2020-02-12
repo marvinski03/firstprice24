@@ -35,6 +35,10 @@
     padding: 40px;
 }
 
+.grecaptcha-badge{
+    z-index: 1;
+}
+
 @media(min-width: 648px){
     .grecaptcha-badge{
         bottom: 184px !important;
