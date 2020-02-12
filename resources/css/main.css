@@ -35,6 +35,12 @@
     padding: 40px;
 }
 
+@media(min-width: 648px){
+    .grecaptcha-badge{
+        bottom: 184px !important;
+    }
+}
+
 p.holi-title {
     font-size: 28px !important;
 }
