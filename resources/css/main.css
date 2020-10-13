@@ -570,6 +570,14 @@ img.slide-feature-icons {
     max-width: 366px;
 }
 
+img.slider-logo{
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    width: calc(100% - 50px);
+    max-width: 175px;
+}
+
 span.fp24-slide-text-top {
     background: #4568f1;
     color: white;
@@ -1072,6 +1080,10 @@ ul.vorteile-liste li:before {
 
     img.slide-feature-icons {
         display:none;
+    }
+
+    img.slider-logo{
+        display: none;
     }
 
     span.fp24-slide-text-top {
