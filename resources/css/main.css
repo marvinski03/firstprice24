@@ -197,6 +197,11 @@ img.h-siegel {
 }
 
 @media(max-width: 992px){
+
+    img.slider-logo{
+        max-width: 125px;
+    }
+
 	.siegels img {
         width: 40px;
         margin-left: 5px;
@@ -1083,7 +1088,10 @@ ul.vorteile-liste li:before {
     }
 
     img.slider-logo{
-        display: none;
+        background: white;
+        padding: 5px;
+        left: 10px;
+        max-width: 80px;
     }
 
     span.fp24-slide-text-top {
