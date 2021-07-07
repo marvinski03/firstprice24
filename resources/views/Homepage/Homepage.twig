@@ -108,6 +108,33 @@
 			</div>
 		</div>
 
+		{% set today = date() %}
+		{% set a = '2021-07-15'|date() %}
+		{% set b = '2021-01-08'|date() %}
+
+
+		{% if today >= a and today <= b %}
+
+			<div class="row">
+				<div class="col-12">
+					<div class="holiday-txt">
+						<p class="holi-title">Wir machen vom 15.07.2021 bis zum 1.08.2021 Betriebsferien.</p>
+			 
+						<p>Bestellungen können leider erst ab dem 02.08.2021 bearbeitet und versendet werden.</p>
+						 
+						<p>Bitte beachten Sie, dass während dieser Zeit keine Bestellungen, E-Mails, Reklamationen oder Rücksendungen bearbeitet werden können.</p>
+						 
+						<p>Wir bedanken uns vielmals für Ihr Verständnis und Ihr Vertrauen. Wir würden uns sehr freuen, Sie nach unseren Betriebsferien wieder als Kunde begrüßen zu dürfen.</p>
+						 
+						<p>Ihr firstprice24.de Team</p>
+					</div>
+				</div>
+			</div>
+
+		{% else %}	
+			<!-- Holiday Notice hidden -->
+		{% endif %}
+
 
 		<div class="row">
 			<div class="col-12">
