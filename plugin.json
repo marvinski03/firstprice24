@@ -1,16 +1,16 @@
 {
-    "version"           :   "4.1.1",
+    "version"           :   "5.0.40",
     "name"              :   "FirstPrice24",
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
     "email"             :   "kontakt@marvin-langer.de",
     "phone"             :   "+49 2841 3674890",
-    "description"       :   "FirstPrice24 Theme for Ceres 3.",
+    "description"       :   "FirstPrice24 Theme for Ceres 5.",
     "namespace"         :   "FirstPrice24",
     "author"            :   "Marvin Langer – Webdesign & Online-Marketing",
     "type"              :   "theme",
     "require"           :   {
-                                "Ceres":"~4.1"
+                                "Ceres":"~5.0.40"
                             },
     "serviceProvider"   :   "FirstPrice24\\Providers\\FirstPrice24ServiceProvider",
     "dataProviders"     :
