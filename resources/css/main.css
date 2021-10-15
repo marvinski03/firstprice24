@@ -276,7 +276,16 @@ body>#vue-app>.wrapper-right {
 	#mainNavbarCollapsable ul.mainmenu>li>a {
 	    padding: 12px 8px 10px 8px;
 	    font-size: 16px;
+        display: inline-block;
 	}
+
+    ul.breadcrumb {
+        display: none !important;
+    }
+
+    .navbar{
+        padding: 0px !important;
+    }
 
 	#mainNavbarCollapsable ul.mainmenu {
 	    background: #fccb40 !important;
@@ -287,6 +296,26 @@ body>#vue-app>.wrapper-right {
         display: block !important;
         text-align: left !important;
 	}
+
+    #mainNavbarCollapsable ul.mainmenu * {
+        color: #333 !important;
+    }
+
+    ul#controlsList {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    a.toggle-basket-preview {
+        padding: 0.5rem .8rem;
+        display: inline-block;
+        margin: 0px !important;
+    }
+
+    #mainNavbarCollapsable ul.mainmenu li {
+        display: inline-block;
+        width: auto !important;
+    }
 
 	#mainNavbarCollapsable ul.mainmenu li.ddown:hover ul {
 	    visibility: visible !important;
