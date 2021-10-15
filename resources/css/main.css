@@ -279,6 +279,10 @@ body>#vue-app>.wrapper-right {
         display: inline-block;
 	}
 
+    #page-header .row.mx-0{
+        width: 100% !important;
+    }
+
     ul.breadcrumb {
         display: none !important;
     }
