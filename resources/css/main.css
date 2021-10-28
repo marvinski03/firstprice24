@@ -73,7 +73,7 @@ div#page-body {
     position: relative;
 }
 
-.cmp {
+#page-header .cmp {
     position: absolute;
     z-index: 9999;
     top: 33px;
