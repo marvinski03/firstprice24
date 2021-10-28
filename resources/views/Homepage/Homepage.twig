@@ -2,212 +2,49 @@
 
 {% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
 
-{% set showDefaultHomepage = config("Ceres.default.homepage") %}
-{% set companyLogo  = config("Ceres.header.company_logo") %}
-{% set companyName  = trans("Ceres::Template.headerCompanyName") %}
-
 {% block PartialHead %}
-    <meta name="description" content="{{ trans('Ceres::Template.homepageMetaDescription') }}">
-    <meta name="robots" content="{% if forceNoIndex %}NOINDEX{% else %}{{ config("Ceres.meta.robots_home") }}{% endif %}">
-    <meta property="og:title" content="{{ companyName }}"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}"/>
-    <meta property="og:image"
-          content="{% if ('http' in companyLogo) or ('layout/' in companyLogo) %}{{ companyLogo }}{% else %}{{ plugin_path('Ceres') }}/{{ companyLogo }}{% endif %}"/>
+    {% embed getPartial('page-metadata') %}
+        {% if category is defined and category is not null %}
+            {# Override default behaviour: Use empty title if no explicit meta title is defined #}
+            {% block title category.details[0].metaTitle | default('') %}
+            {% set metaDescription = category.details[0].metaDescription | default('') %}
+            {% set metaRobots = metaRobots %}
+        {% else %}
+            {% set metaDescription = trans('Ceres::Template.homepageMetaDescription') %}
+            {% set metaRobots = ceresConfig.meta.robotsHome %}
+        {% endif %}
 
-    <script type="application/ld+json">
-        {"@context": "http://schema.org","@type": "WebSite","url": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}/search?query={search_term}","query-input": "required name=search_ter	"}}
-    </script>
+        {% block description metaDescription %}
+        {% block robots metaRobots %}
 
-    <title>{{ companyName }}</title>
+    {% endembed %}
 {% endblock %}
 
 {% block PageBody %}
+    {% set shopBuilderTemplate = "" %}
+    {% if category is defined and category is not null %}
+        {# get shopbuilder template for category if defined #}
+        {% set shopBuilderTemplate = shop_builder_category_template(category.id) %}
+    {% endif %}
 
-<div id="front-page">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-
-
-				<div class="carousel slide fp24-front" data-interval="5000" data-ride="carousel" id="carousel-example">
-					<div class="carousel-inner" id="carousel-content">
-
-
-						<!-- START: AKKU ÜBERWACHUNG, HALLO MAMA -->
-						<div class="carousel-item text-muted active">
-							<a href="https://www.firstprice24.de/ueberwachungssysteme/funkueberwachung/funk-video-ueberwachungssystem-1080p-funk-kamera-mit-akku-bis-4-6-monate-pir-mikrofon_1211_2224">
-								<img class="img-fluid mobile-right" src="https://www.firstprice24.de/documents/category/321/akku-ueberwachungskamera.jpg" />
-							</a>
-
-							<div class="fp24-slide-text">
-								<a href="https://www.firstprice24.de/ueberwachungssysteme/funkueberwachung/funk-video-ueberwachungssystem-1080p-funk-kamera-mit-akku-bis-4-6-monate-pir-mikrofon_1211_2224">
-									<span class="fp24-slide-text-top">Akku Überwachungssystem</span><br>
-									<span class="fp24-slide-text-bottom">Solarkompatibel / Zwei-Wege-Kommunikation / Passende App</span><br>
-									<span class="fp24-slide-button">Mehr erfahren</span>
-								</a>
-							</div>
-
-							<img src="https://www.firstprice24.de/luvision_combination_mark_bright-768x199.png" class="slider-logo"/>
-
-						</div>
-						<!-- ENDE -->
-
-
-						<!-- START: 4G LTE KAMERA -->
-						<div class="carousel-item text-muted">
-							<a href="https://www.firstprice24.de/ueberwachungskameras/ip-lan-w-lan-kameras/4g-lte-schwenkbare-ptz-ip-kamera-mit-solarpanel-sonnenkollektor-mikrofon_923_1310">
-								<img class="img-fluid mobile-right" src="https://www.firstprice24.de/documents/category/321/4g-solar-kamera.jpg" />
-							</a>
-
-							<div class="fp24-slide-text">
-								<a href="https://www.firstprice24.de/ueberwachungskameras/ip-lan-w-lan-kameras/4g-lte-schwenkbare-ptz-ip-kamera-mit-solarpanel-sonnenkollektor-mikrofon_923_1310">
-									<span class="fp24-slide-text-top">4G / LTE PTZ Solar IP Kamera</span><br>
-									<span class="fp24-slide-text-bottom">Schwenkbare Überwachungskamera mit Solarpanel</span><br>
-									<span class="fp24-slide-button">Mehr erfahren</span>
-								</a>
-							</div>
-
-							<img src="https://www.firstprice24.de/luvision_combination_mark_bright-768x199.png" class="slider-logo"/>
-
-						</div>
-						<!-- ENDE -->
-
-
-						<!-- START: DUAL WLAN SYSTEM -->
-						<div class="carousel-item text-muted">
-							<a href="https://www.firstprice24.de/ueberwachungssysteme/komplettsysteme-w-lan/dual-wlan-funk-nvr-ueberwachungssystem-mit-4-8-x-ultra-hd-4k-5mp-ueberwachungskameras-mit-mikrofon_1254_2297">
-								<img class="img-fluid mobile-right" src="https://www.firstprice24.de/documents/category/321/dual-wlan-ueberwachungssystem.jpg" />
-							</a>
-
-							<div class="fp24-slide-text">
-								<a href="https://www.firstprice24.de/ueberwachungssysteme/komplettsysteme-w-lan/dual-wlan-funk-nvr-ueberwachungssystem-mit-4-8-x-ultra-hd-4k-5mp-ueberwachungskameras-mit-mikrofon_1254_2297">
-									<span class="fp24-slide-text-top">Dual WLAN Überwachungssystem</span><br>
-									<span class="fp24-slide-text-bottom">Mit Personenerkennung und  Ultra HD 4K Auflösung</span><br>
-									<span class="fp24-slide-button">Mehr erfahren</span>
-								</a>
-							</div>
-
-							<img src="https://www.firstprice24.de/luvision_combination_mark_bright-768x199.png" class="slider-logo"/>
-
-						</div>
-						<!-- ENDE -->
-
-
-
-
-
-					</div>
-
-					<a class="left carousel-control carousel-control-prev" href="#carousel-example" data-slide="prev"></a>
-
-					<a class="right carousel-control carousel-control-next" href="#carousel-example" data-slide="next"></a>
-
-
-				</div>
-			</div>
-		</div>
-
-		{% set today = date() %}
-		{% set a = date('2021-07-15') %}
-		{% set b = date('2021-08-01') %}
-
-		{% if today >= a and today <= b %}
-
-			<div class="row">
-				<div class="col-12">
-					<div class="holiday-txt">
-						<p class="holi-title">Wir machen vom 15.07.2021 bis zum 1.08.2021 Betriebsferien.</p>
-			 
-						<p>Bestellungen können leider erst ab dem 02.08.2021 bearbeitet und versendet werden.</p>
-						 
-						<p>Bitte beachten Sie, dass während dieser Zeit keine Bestellungen, E-Mails, Reklamationen oder Rücksendungen bearbeitet werden können.</p>
-						 
-						<p>Wir bedanken uns vielmals für Ihr Verständnis und Ihr Vertrauen. Wir würden uns sehr freuen, Sie nach unseren Betriebsferien wieder als Kunde begrüßen zu dürfen.</p>
-						 
-						<p>Ihr firstprice24.de Team</p>
-					</div>
-				</div>
-			</div>
-
-		{% else %}	
-			<!-- Holiday Notice hidden -->
-		{% endif %}
-
-
-		<div class="row">
-			<div class="col-12">
-				<h1>Innovative Neuheiten aus den Bereichen Technik und Elektronik!</h1>
-				<p class="fp24-intro">Wir versprechen Ihnen, dass Ihre Suche nach einer Videoüberwachung, einem Auto Rückfahrsystem oder einer allgemeinen Überwachungskamera sowie Auto Multimedia bei uns von Erfolg gekrönt ist. Bei uns gibt es in Sachen Sicherheit und im Speziellen beim Thema Überwachungssystem für Gewerbe und Zuhause ein beeindruckendes Angebot an ausgefeilter Technik, höchsten Standards und beste Qualität zu günstigen Preisen.</p>
-			</div>
-		</div>
-
-		<div class="row vorteile">
-			<div class="col-6 col-md-3">
-				<div class="vorteil-img">
-					<img src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/schneller-versand.png"/>
-				</div>
-				<p>Schneller und sicherer Versand mit Online-Sendungsverfolung via DHL</p>
-			</div>
-
-			<div class="col-6 col-md-3">
-				<div class="vorteil-img">
-					<img src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/zahlungsarten.png"/>
-				</div>
-				<p>Viele Zahlungsarten wie PayPal, AmazonPay, Rechnungskauf, uvm.</p>
-			</div>
-
-			<div class="col-6 col-md-3">
-				<div class="vorteil-img">
-					<img src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/expertise.png"/>
-				</div>
-				<p>FirstPrice24 ist seit über 10 Jahren erfolgreich auf dem Markt vertreten</p>
-			</div>
-
-			<div class="col-6 col-md-3">
-				<div class="vorteil-img">
-					<img src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/kauferschutz.png"/>
-				</div>
-				<p>Zusätzliche Sicherheit dank SSL-Verschlüsselung und TrustedShop-Käuferschutz</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-12">
-				{% for content in container("Ceres::Homepage") if content.plugin == "Plenty" %}
-                    {{ content.result|raw }}
-                {% endfor %}
+    {% if shopBuilderTemplate | trim is not empty %}
+        {# show shopbuilder content for homepage category #}
+        <div class="container-max">
+            <div class="row">
+                <div class="col">
+                    {{ shopBuilderTemplate | raw }}
+                </div>
             </div>
-		</div>
-
-		<div class="row further-front-infos">
-			<div class="col-lg-6">
-				<h2>Innovatives Angebot</h2>
-				<p>firstprice24.de Onlineshop bietet eine innovatives Angebot zu günstigen Preisen an kompletten Überwachungssystemen, Auto- Rückfahrsystemen sowie Auto- Multimedia Produkten Wir bieten Ihnen eine außergewöhnliche und individuelle Beratung, je nach Wunsch per Fax, Telefon oder E-Mail, hundertprozentiger Datenschutz gewährleistet. In unserem Shop finden Sie Überwachungsrecorder, Netzwerkrecorder, AHD und POE Überwachungssysteme, Überwachungsmonitore, IP POE Überwachungskameras, IP WiFi Überwachungskameras, Netzwerk Überwachungskameras, WLAN Kameras, Funk- und Kabel Überwachungssysteme und vieles mehr aus den Bereichen Sicherheit für Gewerbe und private Haushalte. Unser Auto-Sektor beinhaltet ein umfangreiches Angebot an Auto-Rückfahrsystemen, Auto Rückfahrkameras, Auto TFT Monitore, Auto Multimedia Monitore sowie Einparkhilfen. Top-Produkte zu Top-Preisen aus dem Bereich Videoüberwachung, Überwachungstechnik und Sicherheitstechnik für Ihr Auto und Car Multimedia Produkten</p>
-            </div>
-
-            <div class="col-lg-6">
-				<h2>Beliebte Funk-Überwachungssysteme</h2>
-				<p>Äußerst begehrte und beliebte Überwachungssysteme, die Ihnen durch die hohe Megapixel Zahl ein perfektes Bild zur Bewachung Ihres ausgewählten Objektes liefern. Unser reichhaltiges Angebot an Auto Rückfahrkameras bietet sicher auch etwas Passendes für Sie. Wählen Sie einfach nur aus unseren günstigsten Angeboten ein Überwachungssystem oder eine Rückfahrkamera und richten Sie sich ganz nach Ihrem Geschmack und Ihren Bedürfnissen. Zögern Sie nicht, sich bezüglich unserer Angebotsvielfalt an Überwachungssystemen, ganz gleich ob eine Netzwerkkamera, WLAN oder Infrarot Kamera oder ein komplette Überwachungssystem für Überwachung von Ihrem Haus einem Büro oder eines kompletten Ladengeschäftes. Wenden Sie sich vertrauensvoll an unsere erfahrenen Mitarbeiter. Wir stehen mit vollem Herzen und engagierter Tatkraft für Sie zur Verfügung!</p>
-            </div>
-		</div>
-
-		<div class="row">
-			<div class="col-12">
-				<p class="fp24-title">Unsere Top-Marken</p>
-				<div class="top-marken-wrap">
-					<img src="https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Startseite/logo-hawotec.png" />
-					<img src="https://www.firstprice24.de/documents/category/321/logo-car-matrix-2020.png" width="157" height="50"/>
-					<a href="https://luvision-electronics.com/" target="_blank" title="LUVISION">
-					<img src="https://www.firstprice24.de/luvision_combination_mark_bright-768x199.png" width="190" height="50" />
-					</a>
-				</div>
-            </div>
-		</div>
-
-
-	</div>
-</div>
-
+        </div>
+    {% else %}
+        {% set overrideHomepage = LayoutContainer.show("Ceres::Homepage") %}
+        {% if overrideHomepage | trim is not empty %}
+            {# Show contents for container Ceres::Homepage #}
+            {{ overrideHomepage }}
+        {% else %}
+            {# Show default homepage #}
+            {% include "Ceres::Homepage.MarketingHomepage.twig" %}
+        {% endif %}
+    {% endif %}
 
 {% endblock %}
