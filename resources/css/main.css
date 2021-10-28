@@ -436,10 +436,6 @@ del.crossprice:before,
     transform: rotate(-4deg);
 }
 
-div#page-body {
-    padding-top: 30px;
-}
-
 @media(max-width: 400px){
     .cmp-product-thumb .prices {
         display: block;
@@ -1102,10 +1098,6 @@ ul.vorteile-liste li:before {
 
     div#front-page {
         overflow: hidden;
-    }
-
-    div#page-body{
-        padding-top: 0px;
     }
 
     .wrapper.header-wrap.wrapper-main {
