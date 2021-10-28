@@ -148,12 +148,16 @@
 <div class="container-max page-header">
     <div class="row mx-0">
         <div id="searchBox" class="cmp cmp-search-box collapse">
-            {% set overrideSearchBar = LayoutContainer.show("Ceres::Search.SearchBar") %}
-            {% if overrideSearchBar | trim is empty %}
-                <item-search template="#vue-item-search"></item-search>
-            {% else %}
-                {{ overrideSearchBar | raw }}
-            {% endif %}
+            <div class="search-box-inner">
+                <div class="search-box-shadow-frame">
+                    {% set overrideSearchBar = LayoutContainer.show("Ceres::Search.SearchBar") %}
+                    {% if overrideSearchBar | trim is empty %}
+                        <item-search template="#vue-item-search"></item-search>
+                    {% else %}
+                        {{ overrideSearchBar | raw }}
+                    {% endif %}
+                </div>
+            </div>
         </div>
 
         {% if enableCurrencySelect == "true" %}
