@@ -56,6 +56,9 @@ p.holi-title {
     width: 100%;
 }
 
+div#page-body {
+    padding-top: 260px;
+}
 
 /** GENERAL & CONTAINER **/
 
