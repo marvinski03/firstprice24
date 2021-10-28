@@ -93,7 +93,8 @@ body>#vue-error,
 }
 
 
-.fp-article-merkmal b {
+.fp-article-merkmal b,
+.fp-article-merkmal strong{
     min-width: 130px;
     display: inline-block;
 }
