@@ -56,6 +56,13 @@ p.holi-title {
     width: 100%;
 }
 
+.fp-article-list .widget-caption.mb-3.bg-appearance .widget-item-list-inline-caption p {
+    text-align: left !important;
+    font-size: 2em;
+    border-top: 1px solid grey;
+    padding-top: 20px !important;
+}
+
 div#page-body {
     padding-top: 260px;
 }
