@@ -124,6 +124,7 @@ header#page-header.fixed-top {
     position: fixed;
     top: 0px;
     left: 0px;
+    background: none !important;
 }
 
 .wrapper-main .navbar{
