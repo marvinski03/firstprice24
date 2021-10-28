@@ -713,9 +713,7 @@ span.fp24-slide-button:hover {
 
 .vorteile .vorteil-img img{
     max-height: 72px;
-        min-width: 0
-px
-;
+    min-width: 0px;
     -moz-transition:    all .3s;
     -o-transition:      all .3s;
     -webkit-transition: all .3s;
