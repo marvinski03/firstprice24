@@ -97,6 +97,7 @@ body>#vue-error,
 .fp-article-merkmal strong{
     min-width: 130px;
     display: inline-block;
+    min-height: 39px;
 }
 
 .wrapper-main header .controls-list>li {
