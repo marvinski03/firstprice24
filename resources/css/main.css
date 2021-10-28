@@ -90,6 +90,7 @@ body>#vue-error,
 .wrapper-main #page-header.top-bar,
 .navbar{
 	background: none;
+    padding: 0px !important;
 }
 
 
