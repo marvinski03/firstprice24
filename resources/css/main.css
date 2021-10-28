@@ -92,6 +92,12 @@ body>#vue-error,
 	background: none;
 }
 
+
+.fp-article-merkmal b {
+    min-width: 130px;
+    display: inline-block;
+}
+
 .wrapper-main header .controls-list>li {
     font-size: 13px;
 }
