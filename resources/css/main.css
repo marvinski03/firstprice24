@@ -753,6 +753,17 @@ span.fp24-slide-button:hover {
     right: -50px;
 }
 
+.carousel-control-prev span:before,
+.carousel-control-next span:before{
+    font-size: 35px;
+}
+
+.widget.widget-image-carousel.widget-primary.widget-proportional.mb-5 {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    overflow: visible;
+}
+
 .carousel-control-next:before,
 .carousel-control-prev:before {
     position: relative;
@@ -760,14 +771,6 @@ span.fp24-slide-button:hover {
     font: normal normal normal 14px/1 FontAwesome;
     color: #4d4f4d;
     font-size: 30px;
-}
-
-.carousel-control.carousel-control-next:before {
-    content: "";
-}
-
-.carousel-control.carousel-control-prev:before {
-    content: "";
 }
 
 .carousel-control-next:hover:before, .carousel-control-prev:hover:before {
