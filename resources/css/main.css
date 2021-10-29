@@ -351,6 +351,46 @@ body>#vue-app>.wrapper-right {
         color: #333 !important;
     }
 
+    /* CERES 5 UPDATE */
+
+    ul.mainmenu li.ddown {
+        position: relative;
+    }
+
+    ul.mainmenu li.ddown > ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background: #4568f0;
+        padding: 0px;
+        margin: 0px;
+        min-width: 100%;
+    }
+
+    ul.mainmenu li.ddown:hover > ul {
+        display: block;
+    }
+
+    ul.mainmenu li.ddown ul li {
+        display: block !important;
+        float: none !important;
+        justify-content: inherit !important;
+        height: auto !important;
+    }
+
+    ul.mainmenu li.ddown ul li ul {
+        padding: 0px !important;
+    }
+
+    ul.mainmenu li.ddown ul li ul a {
+        padding: 10px !important;
+        display: block !important;
+    }
+
+
+
+
     ul#controlsList {
         padding: 0px !important;
         margin: 0px !important;
