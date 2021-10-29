@@ -32,6 +32,8 @@ class FirstPrice24ServiceProvider extends ServiceProvider
         
         $enabledOverrides = explode(", ", $config->get("FirstPrice24.templates.override"));
 
+        $this->overrideTemplate("Ceres::Widgets.Category.ItemGridWidget", "FirstPrice24::Widgets.Category.ItemGridWidget");
+
         // Override partials
         $dispatcher->listen('IO.init.templates', function (Partial $partial) use ($enabledOverrides)
         {
