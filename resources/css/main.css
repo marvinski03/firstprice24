@@ -762,6 +762,7 @@ span.fp24-slide-button:hover {
     width: calc(100% - 50px);
     margin: 0 auto;
     overflow: visible;
+    padding-bottom: 31.73333%;
 }
 
 .carousel-control-next:before,
@@ -886,6 +887,11 @@ span.availability.badge {
 span.availability.badge *{
     color: white;
 }
+
+a.nav-link.bg-appearance {
+    background: #fccb40 !important;
+}
+
 
 ul.nav.nav-tabs a {
     color: black;
