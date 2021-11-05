@@ -1171,6 +1171,11 @@ ul.vorteile-liste li:before {
     margin-right: 25px;
 }
 
+body.page-category-content.page-category .main {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
 @media(max-width: 920px){
     .desktop-top-bar-usps {
          display: none !important;
