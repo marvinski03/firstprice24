@@ -113,7 +113,7 @@ body>#vue-error,
     min-height: 39px;
 }
 
-.wrapper-main header .controls-list>li {
+ul#controlsList * {
     font-size: 13px;
 }
 
@@ -1184,6 +1184,38 @@ ul.vorteile-liste li:before {
 }
 
 @media(max-width: 768px){
+
+    .widget.widget-image-carousel.widget-primary.widget-proportional.mb-5{
+        width: 100%;
+        padding-bottom: 40%;
+    }
+
+    .widget-image-carousel .widget-inner .carousel-item img.img-cover{
+        object-position: left;
+    }
+
+    .vorteile > div {
+        width: 50% !important;
+        flex: 0 0 50%;
+    }
+
+    .vorteile .widget-inner.bg-appearance {
+        padding: 0px !important;
+        margin-top: 15px;
+    }
+
+    .carousel-control-prev span:before, .carousel-control-next span:before {
+        font-size: 18px;
+        position: relative;
+        top: -10px;
+    }
+
+    .vorteil-img, .vorteil-img a {
+        margin: 0px !important;
+        padding: 0px !important;
+        height: auto !important;
+        min-height: 0px !important;
+    }
 
     button#btnMainMenuToggler {
         position: absolute;
