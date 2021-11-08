@@ -1187,6 +1187,25 @@ body.page-category-content.page-category .main h3,
 body.page-category-content.page-category .main h4{
     font-size: 24px;
 }
+
+.to-top.d-md-none {
+    width: 100%;
+    background: #585858;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+button.btn.btn-primary.btn-appearance.mobile-width-button {
+    background: white;
+    border-color: #212529;
+    color: #212529;
+}
+
+button.btn.btn-primary.btn-appearance.mobile-width-button:hover {
+    background: #fccb40;
+    border-color: #fccb40;
+    color: #212529;
+}
  
 
 @media(max-width: 920px){
@@ -1202,6 +1221,11 @@ body.page-category-content.page-category .main h4{
 }
 
 @media(max-width: 768px){
+
+
+    .fp-article-merkmal b, .fp-article-merkmal strong{
+        min-height: 0px;
+    }
 
     .widget.widget-image-carousel.widget-primary.widget-proportional.mb-5{
         width: 100%;
