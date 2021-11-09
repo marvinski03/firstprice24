@@ -1001,25 +1001,25 @@ a.item-name.text-primary.text-appearance{
 
 /** FOOTER **/
 
-.footer {
+.footer-main {
     padding: 15px;
     background: #333;
 }
 
-.footer img {
+.footer-main img {
     max-width: 100%;
 }
 
-.footer * {
+.footer-main * {
     color: white;
 }
 
-.footer p a,
+.footer-main p a,
 .copy-footer a{
 	color: #fbbd00;
 }
 
-.footer p a:hover,
+.footer-main p a:hover,
 .copy-footer a:hover{
 	color: white;
 	text-decoration: underline;
