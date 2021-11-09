@@ -149,6 +149,11 @@ body>#vue-app .wrapper-main, body>#vue-error .wrapper-main {
 .clear{clear:both;}
 
 
+.footer .widget.widget-code.widget-none {
+    margin: 0px !important;
+}
+
+
 /** HEADER **/
 
 header#page-header.fixed-top {
