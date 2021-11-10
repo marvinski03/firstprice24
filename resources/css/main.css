@@ -49,6 +49,16 @@
     }
 }
 
+
+.footer-login div a i {
+    display: none;
+}
+
+.footer-login div a {
+    padding: 0px 0px 6px 0px;
+    margin: 0px;
+}
+
 p.holi-title {
     font-size: 28px !important;
 }
@@ -1101,7 +1111,7 @@ ul.fp24-links li a {
 }
 
 ul.fp24-links li a:hover {
-    color: #fbbd00;
+    color: #fbbd00 !important;
 }
 
 ul.vorteile-liste {
