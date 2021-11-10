@@ -54,6 +54,10 @@
     display: none;
 }
 
+.footer-login a#accountMenuList {
+    display: none;
+}
+
 .footer-login div a {
     padding: 0px 0px 6px 0px;
     margin: 0px;
