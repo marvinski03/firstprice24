@@ -27,6 +27,15 @@ jQuery(document).ready(function() {
 	});
 
 
+	/** SCROLL TO TOP **/
+
+
+	$(".to-top.d-md-none").click(function(e){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+  		return false;
+	});
+
+
 	/** SOME SHARE **/
 
 	function socialWindow(url) {
