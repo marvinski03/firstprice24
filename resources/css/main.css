@@ -303,6 +303,7 @@ img.h-siegel {
 .fp24-anleitung > div{
     margin-top: -42px;
     margin-bottom: 40px !important;
+    min-height: 1px;
 }
 
 @media(max-width: 768px){
