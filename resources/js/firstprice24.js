@@ -27,7 +27,7 @@ jQuery(document).ready(function() {
 	});
 
 
-	$(".fp24-anleitung a").html("<i class='fa fa-download'></i> Anleitung herunterladen");
+	$(".fp24-anleitung a").html("<b>Download</b> <i class='fa fa-download'></i> Anleitung herunterladen");
 
 
 	/** SCROLL TO TOP **/
