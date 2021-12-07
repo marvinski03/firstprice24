@@ -19,6 +19,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+div#easyCreditInformation {
+    margin: 20px 0px;
+}
+
 .cc-window {
     z-index: 99999999990;
 }
