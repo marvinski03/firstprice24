@@ -30,13 +30,13 @@
     transition: all .3s;
 }
 
-.fp24-anleitungen ul li a:hover {
+.fp24-downloads  ul li a:hover {
     background: #fccb40;
 }
 
-.fp24-anleitungen ul li a:before {
-    font: normal normal normal 14px/1 FontAwesome;
+.fp24-downloads  ul li a:before {
     content: "";
+    font: normal normal normal 14px/1 FontAwesome;
     margin-right: 10px;
 }
 
