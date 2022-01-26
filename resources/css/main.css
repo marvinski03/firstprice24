@@ -12,6 +12,34 @@
        url('https://cdn02.plentymarkets.com/n8vxo78n72cv/frontend/Ceres/fonts/abel-v9-latin-regular.svg#Abel') format('svg'); /* Legacy iOS */
 }
 
+
+.fp24-downloads ul li {
+    margin: 0px 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.fp24-downloads ul li:last-of-type {
+    border-bottom: none;
+}
+
+
+.fp24-downloads  ul li a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    transition: all .3s;
+}
+
+.fp24-anleitungen ul li a:hover {
+    background: #fccb40;
+}
+
+.fp24-anleitungen ul li a:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "";
+    margin-right: 10px;
+}
+
 *{
   font-family: 'Abel', sans-serif;
   color: #333;
