@@ -30,6 +30,17 @@ jQuery(document).ready(function() {
 	$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
 
 
+	$(".variation-select select").change(function(){	
+		$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+		setTimeout(function(){
+			$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+		},500);
+		setTimeout(function(){
+			$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+		},1000);
+	});
+
+
 	/** SCROLL TO TOP **/
 
 
