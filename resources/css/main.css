@@ -1531,3 +1531,8 @@ button.btn.btn-primary.btn-appearance.mobile-width-button:hover {
 
 
 
+
+.cookie-bar.out {
+    right: 15px !important;
+    left: inherit !important;
+}
