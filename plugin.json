@@ -1,5 +1,5 @@
 {
-    "version"           :   "5.0.43",
+    "version"           :   "5.0.50",
     "name"              :   "FirstPrice24",
     "pluginIcon"        :   "icon_plugin_xs.png",
     "authorIcon"        :   "icon_author_xs.png",
@@ -10,7 +10,7 @@
     "author"            :   "Marvin Langer – Webdesign & Online-Marketing",
     "type"              :   "theme",
     "require"           :   {
-                                "Ceres":"~5.0.43"
+                                "Ceres":"~5.0.50"
                             },
     "serviceProvider"   :   "FirstPrice24\\Providers\\FirstPrice24ServiceProvider",
     "dataProviders"     :
