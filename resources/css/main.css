@@ -1284,13 +1284,13 @@ body.page-category-content.page-category .main h4{
     padding: 20px 10px;
 }
 
-button.btn.btn-primary.btn-appearance.mobile-width-button {
+button.btn.btn-primary.btn-appearance {
     background: white;
     border-color: #212529;
     color: #212529;
 }
 
-button.btn.btn-primary.btn-appearance.mobile-width-button:hover {
+button.btn.btn-primary.btn-appearance:hover {
     background: #fccb40;
     border-color: #fccb40;
     color: #212529;
