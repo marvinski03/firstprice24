@@ -332,32 +332,38 @@ img.h-siegel {
     color: #333;
 }
 
-.fp24-anleitung > div{
+.fp24-anleitung > div,
+.fp24-beschreibung > div{
     margin-top: -42px;
     margin-bottom: 40px !important;
     min-height: 1px;
 }
 
 @media(max-width: 768px){
-   .fp24-anleitung > div{
+   .fp24-anleitung > div,
+   .fp24-beschreibung > div{
     margin-top: -28px;
    } 
 }
 
-.fp24-anleitung, .fp24-anleitung div {
+.fp24-anleitung, .fp24-anleitung div,
+.fp24-beschreibung, .fp24-beschreibung div{
     padding: 0px !important;
 }
 
-.fp24-anleitung a {
+.fp24-anleitung a,
+.fp24-beschreibung a{
     text-decoration: none;
     font-size: 14px;
 }
 
-.fp24-anleitung * {
+.fp24-anleitung *,
+.fp24-beschreibung *{
     color: #333;
 }
 
-.fp24-anleitung a i {
+.fp24-anleitung a i,
+.fp24-beschreibung a i{
     font-size: 16px;
     margin-right: 5px;
 }

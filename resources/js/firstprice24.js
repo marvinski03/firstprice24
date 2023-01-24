@@ -26,26 +26,35 @@ jQuery(document).ready(function() {
 	    checkFinanzierungsanzeige();
 	});
 
+	function setDownloadView(){
+		$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+		if( $(".fp24-anleitung a").length > 0 ){
+			$(".fp24-beschreibung a").html("<b>&nbsp;</b> <i class='fa fa-download'></i> Beschreibung (PDF)");
+		}else{
+			$(".fp24-beschreibung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Beschreibung (PDF)");
+		}
+	}
 
-	$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+	setDownloadView();
+	
 
 	$(".variation-select select").change(function(){	
-		$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+		setDownloadView();
 		setTimeout(function(){
-			$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+			setDownloadView();
 		},500);
 		setTimeout(function(){
-			$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+			setDownloadView();
 		},1000);
 	});
 
 	$('body').on('change', '.variation-select select', function (event) {
-		$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+		setDownloadView();
 		setTimeout(function(){
-			$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+			setDownloadView();
 		},500);
 		setTimeout(function(){
-			$(".fp24-anleitung a").html("<b>Downloads</b> <i class='fa fa-download'></i> Anleitung (PDF)");
+			setDownloadView();
 		},1000);
 	});
 
