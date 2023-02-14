@@ -13,6 +13,17 @@
 }
 
 
+body.page-singleitem .amazon-add-cart-button {
+    margin-top: 15px;
+    padding: 0px !important;
+    width: 100% !important;
+}
+
+body.page-checkout .amazon-pay-button {
+    width: 100% !important;
+    margin-bottom: 50px !important;
+}
+
 .fp24-downloads ul li {
     margin: 0px 20px;
     border-bottom: 1px solid #dbdbdb;
