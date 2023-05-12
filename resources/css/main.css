@@ -908,6 +908,12 @@ span.fp24-slide-button:hover {
     transition:         all .3s;
 }
 
+@media(max-width: 550px){
+    .vorteile .vorteil-img * {
+        object-fit: cover !important;
+        height: 70px !important;
+    }
+
 .row.vorteile > div:hover img {
     behavior:           url(-ms-transform.htc);  
     -moz-transform:     scale(1.15);
