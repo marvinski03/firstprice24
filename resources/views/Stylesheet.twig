@@ -4,13 +4,16 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="{{ plugin_path('FirstPrice24') }}/js/firstprice24.js"></script>
 
-<!-- PAGEMAP --> 
-{% if singleImages %}
+
+
+<!-- PAGEMAP V2 --> 
+{% set itemData = item.documents[0].data %}
+{% if itemData.images.all[0].url %}
 
 <PageMap>
 	<DataObject type="thumbnail">
 	  
-	  <Attribute name="src" value="{{ singleImages|first.url }}"/>
+	  <Attribute name="src" value="{{ itemData.images.all[0].url }}"/>
 	  
 	  <Attribute name="width" value="1000"/>
 	  
