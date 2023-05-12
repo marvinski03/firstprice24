@@ -4,6 +4,21 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="{{ plugin_path('FirstPrice24') }}/js/firstprice24.js"></script>
 
+{% if singleImages %}
+
+<PageMap>
+	<DataObject type="thumbnail">
+	  
+	  <Attribute name="src" value="{{ singleImages[0].url }}"/>
+	  
+	  <Attribute name="width" value="100"/>
+	  
+	  <Attribute name="height" value="130"/>
+
+	</DataObject>
+</PageMap>
+
+{% endif %}
 
 
 <script><!--Start of Tawk.to Script-->
