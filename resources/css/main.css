@@ -918,6 +918,7 @@ span.fp24-slide-button:hover {
         object-fit: cover !important;
         height: 70px !important;
     }
+}
 
 .row.vorteile > div:hover img {
     behavior:           url(-ms-transform.htc);  
