@@ -9,9 +9,6 @@
     "namespace"         :   "FirstPrice24",
     "author"            :   "Marvin Langer – Webdesign & Online-Marketing",
     "type"              :   "theme",
-    "require"           :   {
-                                "Ceres":"~5.0.60"
-                            },
     "serviceProvider"   :   "FirstPrice24\\Providers\\FirstPrice24ServiceProvider",
     "dataProviders"     :
     [
