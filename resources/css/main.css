@@ -918,6 +918,15 @@ span.fp24-slide-button:hover {
         object-fit: cover !important;
         height: 70px !important;
     }
+
+    body.page-home-category .widget.widget-text.widget-none[style="margin-top: 100px;"] {
+        margin-top: 30px !important;
+    }
+
+    body.page-home-category .owl-dots {
+        display: none !important;
+    }
+
 }
 
 .row.vorteile > div:hover img {
