@@ -904,9 +904,9 @@ span.fp24-slide-button:hover {
 }
 
 .vorteile .vorteil-img img{
-    max-height: 72px;
-    min-width: 0px;
-    width: auto !important;
+    max-height: 72px !important;
+    width: 100% !important;
+    object-fit: scale-down;
     -moz-transition:    all .3s;
     -o-transition:      all .3s;
     -webkit-transition: all .3s;
@@ -914,10 +914,6 @@ span.fp24-slide-button:hover {
 }
 
 @media(max-width: 550px){
-    .vorteile .vorteil-img * {
-        object-fit: cover !important;
-        height: 70px !important;
-    }
 
     body.page-home-category .widget.widget-text.widget-none[style="margin-top: 100px;"] {
         margin-top: 30px !important;
